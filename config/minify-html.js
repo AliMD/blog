@@ -4,6 +4,8 @@ const swcHtml = require("@swc/html");
  * @type {import("@swc/html").Options}
  */
 const swcHtmlOptions = {
+  forceSetHtml5Doctype: true,
+  quotes: true,
   collapseWhitespaces: "smart",
   removeEmptyMetadataElements: true,
   removeComments: true,
