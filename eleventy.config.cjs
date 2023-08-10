@@ -6,6 +6,11 @@ const { minifyHtml } = require('./config/minify-html');
  * @returns {ReturnType<import("@11ty/eleventy/src/defaultConfig")>}
  */
 module.exports = function (eleventyConfig) {
+  eleventyConfig.addPassthroughCopy({
+    'assets': '/',
+    'assets/img/meta/favicon.ico': '/favicon.ico',
+  });
+
   eleventyConfig.addTransform('minifyHtml', minifyHtml);
 
   return {

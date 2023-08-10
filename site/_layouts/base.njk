@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="{{ locale }}" dir="{{ dir }}" xmlns="http://www.w3.org/1999/xhtml">
 <head>
 {% include "meta.njk" %}
 <style>
@@ -9,6 +9,11 @@
 </style>
 </head>
 <body>
+  {% include "header.njk" %}
+  {% include "nav.njk" %}
+
   {{ content | safe }}
+
+  {% include "footer.njk" %}
 </body>
 </html>
