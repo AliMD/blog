@@ -1,10 +1,13 @@
 {
   "title": "12fy",
-  "description": "Khafan 12fy website.",
+  "description": "Khafangzj website.",
   "author": "Alwatr",
   "defaultSocialImage": "/img/meta/social.jpg",
+  "locale": "en",
+  "dir": "ltr",
   "theme": {
     "dark": "#673ab7",
-    "light": "#673ab7"
+    "light": "#673ab7",
+    "splashBackground": "#fffff"
   }
 }

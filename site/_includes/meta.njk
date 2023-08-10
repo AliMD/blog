@@ -11,16 +11,18 @@
 
 <meta charset="utf-8" />
 
-{# <link rel="preload" as="style" href="main.css" fetchpriority="high" /> #}
-{# <link rel="preload" as="script" href="main.js" fetchpriority="high" crossorigin /> #}
-{# <link media="print" rel="stylesheet" href="main.css" onload="this.media='all';this.onload=null;"/> #}
-<link rel="manifest" href="manifest.webmanifest"/>
+{#
+<link rel="preload" as="style" href="main.css" fetchpriority="high" />
+<link rel="preload" as="script" href="main.js" fetchpriority="high" crossorigin />
+<link media="print" rel="stylesheet" href="main.css" onload="this.media='all';this.onload=null;"/>
+#}
+
+<link rel="manifest" href="/manifest.webmanifest" />
 
 <meta name="color-scheme" content="light dark" />
 <meta name="theme-color" media="(prefers-color-scheme: light)" content="{{ site.theme.light }}" />
 <meta name="theme-color" media="(prefers-color-scheme: dark)" content="{{ site.theme.dark }}" />
-<meta name="viewport"
-  content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=2, user-scalable=yes, viewport-fit=cover" />
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=2, user-scalable=yes, viewport-fit=cover" />
 
 <meta name="application-name" content="{{ site.title }}" />
 <meta property="og:site_name" content="{{ site.title }}" />
@@ -31,12 +33,8 @@
 {% set socialImage = sharing_image or thumbnail or hero or site.defaultSocialImage %}
 
 <meta name="twitter:card" content="summary_large_image" />
-<meta property="og:image" content="{{ socialImage }}" />
-<meta property="og:image:secure_url" content="{{ socialImage }}" />
 <meta name="twitter:image" content="{{ socialImage }}" />
-<meta property="og:image:type" content="image/png" />
-<meta property="og:image:width" content="500" />
-<meta property="og:image:height" content="500" />
+<meta property="og:image" content="{{ socialImage }}" />
 
 {% if socialImageAlt %}
 <meta property="og:image:alt" content="{{ alt }}" />
@@ -47,13 +45,14 @@
 <meta name="twitter:description" content="{{ description }}" />
 <meta property="og:description" content="{{ description }}" />
 
-<meta name="twitter:site" content="@alidotmd" />
+{% if social.twitter %}
+<meta name="twitter:site" content="@{{ social.twitter }}" />
+{% endif %}
+<meta name="twitter:creator" content="@alidotmd" />
 
-{#
 {% if authors %}
   <meta name="authors" content="{{ authors | sort }}" />
 {% endif %}
-#}
 
 {% if tags %}
   <meta name="tags" content="{{ tags | sort }}" />
