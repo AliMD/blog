@@ -1,5 +1,6 @@
 {
-  "name": "..:: 12fy ::..",
+  "title": "12fy",
   "description": "Khafan 12fy website.",
-  "author": "Alwatr"
+  "author": "Alwatr",
+  "defaultSocialImage": "/img/social.jpg"
 }

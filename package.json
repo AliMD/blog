@@ -13,6 +13,7 @@
     "build": "eleventy"
   },
   "devDependencies": {
-    "@11ty/eleventy": "^2.0.1"
+    "@11ty/eleventy": "^2.0.1",
+    "@swc/html": "^0.0.28"
   }
 }

@@ -146,6 +146,84 @@
     escape-string-regexp "^2.0.0"
     lodash.deburr "^4.1.0"
 
+"@swc/html-android-arm-eabi@0.0.28":
+  version "0.0.28"
+  resolved "https://registry.yarnpkg.com/@swc/html-android-arm-eabi/-/html-android-arm-eabi-0.0.28.tgz#236f1c3d7d84bd834c959a5e869a0dcb106ef5c1"
+  integrity sha512-vkgwkyA5hprjQJ4E7DcA/dxeaeOMNDFSkjlvtAh8TY9C56tsiMdnPtiPgAZCe3wcqY9hsQ/vYtpA+dSabyPTbg==
+
+"@swc/html-android-arm64@0.0.28":
+  version "0.0.28"
+  resolved "https://registry.yarnpkg.com/@swc/html-android-arm64/-/html-android-arm64-0.0.28.tgz#d1a8796afc67d2616f9b9ef82dcef4f3e7fd370a"
+  integrity sha512-LC1CkezNKJ01JvPdW42uAu6P8gYkfRhV4Uj4VDJKWqN6K/8b8Nx+jNzKCd77MP04ylkOy/J0rP2Dl731DPeroQ==
+
+"@swc/html-darwin-arm64@0.0.28":
+  version "0.0.28"
+  resolved "https://registry.yarnpkg.com/@swc/html-darwin-arm64/-/html-darwin-arm64-0.0.28.tgz#60e12c936f0e38893f52c4597bda36ead610fb49"
+  integrity sha512-DyZvkMrLJgMcCv4RxOh/9fuBEO3QFAqh0Bs4K7t9nz+8bMATRxNqnkAXkNlQ3cRFnb5KV43+KbGVIYHhKMABjg==
+
+"@swc/html-darwin-x64@0.0.28":
+  version "0.0.28"
+  resolved "https://registry.yarnpkg.com/@swc/html-darwin-x64/-/html-darwin-x64-0.0.28.tgz#998a8a32721851de050b6cf7257bf3e5f9d1641c"
+  integrity sha512-ToII2vC0ETQsFpw8EEADiG7p9VU79oE5K/ho0Ahu3D6gh6ONMajTkZsTf/nOofnWVwa3PYrrUqIfKJAqHFkMsw==
+
+"@swc/html-linux-arm-gnueabihf@0.0.28":
+  version "0.0.28"
+  resolved "https://registry.yarnpkg.com/@swc/html-linux-arm-gnueabihf/-/html-linux-arm-gnueabihf-0.0.28.tgz#9478c219d0955654ca4d2296260b5bed97d3434c"
+  integrity sha512-BNtiMSipyTS70cmR5Xq4thpIcF11072sFEKSqAkOfYw+GFJCw5OPeLfYCCHlQYA3Kd4s3J3C5EJPV6BHvg8ftw==
+
+"@swc/html-linux-arm64-gnu@0.0.28":
+  version "0.0.28"
+  resolved "https://registry.yarnpkg.com/@swc/html-linux-arm64-gnu/-/html-linux-arm64-gnu-0.0.28.tgz#65fcae59ad519e2c4e6408f2f004b3ba810c9ca7"
+  integrity sha512-t3B2mqwRZkAbcjM168IYNwTwyLJJCdJP5hL7k3ZqdWmnrisyGf5c8Z5MpWVkcchuBq/HP/XVSn6fQSK2LlUbuw==
+
+"@swc/html-linux-arm64-musl@0.0.28":
+  version "0.0.28"
+  resolved "https://registry.yarnpkg.com/@swc/html-linux-arm64-musl/-/html-linux-arm64-musl-0.0.28.tgz#73bf24ffaee8a2a924bde0d957a28fb404864ff5"
+  integrity sha512-s0+0e9UjqsGv4TNNCZ8joiPUzAiENcgUlKSl8Dg4rqETZ2nMKX/7arn6pfJEQCVAMRaoueDua7ZqY/4bNxq0AQ==
+
+"@swc/html-linux-x64-gnu@0.0.28":
+  version "0.0.28"
+  resolved "https://registry.yarnpkg.com/@swc/html-linux-x64-gnu/-/html-linux-x64-gnu-0.0.28.tgz#461b96ea2e5aea0fc1f7fba612f401c99f49bf42"
+  integrity sha512-RbamF7BwhDHHbo0gYl6LpUsh9GhDpmF5Ljd8worGRAaWy7V2i9tEZedg5KD4EQ8taWMSuQJNsn39rSakCdlk3A==
+
+"@swc/html-linux-x64-musl@0.0.28":
+  version "0.0.28"
+  resolved "https://registry.yarnpkg.com/@swc/html-linux-x64-musl/-/html-linux-x64-musl-0.0.28.tgz#a5a6665b036a1fb5a0db9890b79efad52f790937"
+  integrity sha512-6qIPnYztb2lcddyRPRGuAWp3QxJdXvMk/LWFZ/GoCB37BXvaTOqnjR/RSYFjrwMbt0FRovF119K4B8ea/OCzTQ==
+
+"@swc/html-win32-arm64-msvc@0.0.28":
+  version "0.0.28"
+  resolved "https://registry.yarnpkg.com/@swc/html-win32-arm64-msvc/-/html-win32-arm64-msvc-0.0.28.tgz#6171ab921b05cb9f40bbab1eb57f660da8c4489f"
+  integrity sha512-kCIKE844ZLkMFwV5eQVhU94CJZLu6k51RK4nZZ2FuSTBhLgjaQGYnhf1gsrzL8bymD0aMKByEoTcwJZynfr9Pw==
+
+"@swc/html-win32-ia32-msvc@0.0.28":
+  version "0.0.28"
+  resolved "https://registry.yarnpkg.com/@swc/html-win32-ia32-msvc/-/html-win32-ia32-msvc-0.0.28.tgz#82312219c5b81259f874fdcba9908bf4fb1a7451"
+  integrity sha512-BerOTCxLOYKNZJjf26/wargTrfhA0MeSUuoqNU8RT9OgL+KHYFWFbHIDLgU6B6VElRcQRqHjQZ6j979iNFMNsw==
+
+"@swc/html-win32-x64-msvc@0.0.28":
+  version "0.0.28"
+  resolved "https://registry.yarnpkg.com/@swc/html-win32-x64-msvc/-/html-win32-x64-msvc-0.0.28.tgz#28793fff2c1cf0778cc440f9439d6926ea5e11d9"
+  integrity sha512-jCaCQCZ261d8vKW6HOA2AGh9v5I5/8fInJ6ovAaleh3zSDFPBBEn+Pp4372G1HkM4JhXDP66r0sNeUr0z7c/Zg==
+
+"@swc/html@^0.0.28":
+  version "0.0.28"
+  resolved "https://registry.yarnpkg.com/@swc/html/-/html-0.0.28.tgz#ec7e961bd614c0f44edf0b4ff67735aec473c253"
+  integrity sha512-rN6/DQI3UGT10RGgMuHGi7qMGAaoYCXHxuZkARQj/9DYsL3bkv4L93547j/EmH0khUc+0ztHYF3ZQksSgaSoyg==
+  optionalDependencies:
+    "@swc/html-android-arm-eabi" "0.0.28"
+    "@swc/html-android-arm64" "0.0.28"
+    "@swc/html-darwin-arm64" "0.0.28"
+    "@swc/html-darwin-x64" "0.0.28"
+    "@swc/html-linux-arm-gnueabihf" "0.0.28"
+    "@swc/html-linux-arm64-gnu" "0.0.28"
+    "@swc/html-linux-arm64-musl" "0.0.28"
+    "@swc/html-linux-x64-gnu" "0.0.28"
+    "@swc/html-linux-x64-musl" "0.0.28"
+    "@swc/html-win32-arm64-msvc" "0.0.28"
+    "@swc/html-win32-ia32-msvc" "0.0.28"
+    "@swc/html-win32-x64-msvc" "0.0.28"
+
 "@types/minimatch@^3.0.3":
   version "3.0.5"
   resolved "https://registry.yarnpkg.com/@types/minimatch/-/minimatch-3.0.5.tgz#1001cc5e6a3704b83c236027e77f2f58ea010f40"
