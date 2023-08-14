@@ -13,5 +13,8 @@
   },
   "[nunjucks]": {
     "editor.defaultFormatter": "okitavera.vscode-nunjucks-formatter"
-  }
+  },
+  "cSpell.words": [
+    "cssnano"
+  ]
 }
