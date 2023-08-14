@@ -14,6 +14,10 @@
   },
   "devDependencies": {
     "@11ty/eleventy": "^2.0.1",
-    "@swc/html": "^0.0.28"
+    "@swc/html": "^0.0.28",
+    "cssnano": "^6.0.1",
+    "postcss": "^8.4.27",
+    "postcss-import": "^15.1.0",
+    "postcss-preset-env": "^9.1.1"
   }
 }

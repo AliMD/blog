@@ -1,4 +1,5 @@
 const { minifyHtml } = require('./config/minify-html');
+const { postcssProcess } = require('./config/postcss.js');
 
 /**
  * 11ty configuration.
@@ -11,6 +12,7 @@ module.exports = function (eleventyConfig) {
     'assets/img/meta/favicon.ico': '/favicon.ico',
   });
 
+  eleventyConfig.addAsyncFilter('postcss', postcssProcess);
   eleventyConfig.addTransform('minifyHtml', minifyHtml);
 
   return {
