@@ -1,5 +1,5 @@
 ARG NODE_VERSION=20
-ARG ALWATR_NGINX_VERSION=1.7.0-1.24-alpine
+ARG ALWATR_NGINX_VERSION=1
 
 FROM docker.io/library/node:${NODE_VERSION}-alpine as builder
 
@@ -7,8 +7,6 @@ WORKDIR /app
 
 ENV NODE_ENV production
 ENV MY_ENVIRONMENT production
-
-RUN apk add --no-cache git
 
 COPY package.json *.lock ./
 RUN if [ -f *.lock ]; then \
@@ -23,7 +21,7 @@ RUN yarn build
 
 # ---
 
-FROM ghcr.io/alimd/nginx-pwa:${ALWATR_NGINX_VERSION} as nginx
+FROM ghcr.io/alimd/nginx:${ALWATR_NGINX_VERSION} as nginx
 # Copy builded files from last stage
 ARG PACKAGE_SOURCE
 COPY --from=builder /app/dist/ ./
