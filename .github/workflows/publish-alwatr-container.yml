@@ -5,6 +5,10 @@ name: Publish Alwatr Containers
 on:
   workflow_dispatch:
 
+  push:
+    branch:
+      - main
+
   pull_request:
     paths:
       - 'cloud/Dockerfile'
