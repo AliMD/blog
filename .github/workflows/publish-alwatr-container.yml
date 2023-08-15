@@ -29,10 +29,6 @@ jobs:
             description: Alwatr 12fy website.
             siteUrl: https://12fy.alwatr.ir
 
-          - image: 12fy-beta
-            description: Alwatr 12fy website.
-            siteUrl: https://beta.12fy.alwatr.ir
-
     permissions:
       contents: read
       packages: write
