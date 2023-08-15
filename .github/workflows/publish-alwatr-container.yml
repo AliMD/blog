@@ -87,7 +87,7 @@ jobs:
           tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
           context: .
-          file: ${{ matrix.dockerfile }}
+          file: cloud/Dockerfile
           build-args: |
             SITE_URL=${{ matrix.siteUrl }}
           cache-from: type=gha
