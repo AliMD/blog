@@ -9,12 +9,11 @@ on:
     tags:
       - 'v*.*.*'
     branches:
-      - next
       - main
 
   pull_request:
     paths:
-      - 'cloud/container/alwatr-*.dockerfile'
+      - 'cloud/Dockerfile'
       - '.github/workflows/publish-alwatr-container.yml'
 
 env:
@@ -34,63 +33,9 @@ jobs:
       fail-fast: false
       matrix:
         include:
-          # services
-          - image: comment
-            source: services/comment
-            dockerfile: cloud/container/alwatr-services.dockerfile
-            description: Alwatr Comment API Nanoservice, Distributed simple and fast comment nanoservice.
-
-          - image: flight-crawler
-            source: services/flight-crawler
-            dockerfile: cloud/container/alwatr-services.dockerfile
-            description: Alwatr Flight Crawler Nanoservice, Distributed simple and fast flight crawler nanoservice.
-
-          - image: form-registration
-            source: services/form-registration
-            dockerfile: cloud/container/alwatr-services.dockerfile
-            description: Alwatr Form Registration API Nanoservice, Distributed simple and fast nanoservice for registering form information.
-
-          - image: storage-server
-            source: services/storage-server
-            dockerfile: cloud/container/alwatr-services.dockerfile
-            description: Alwatr Storage Server, Elegant micro in-memory json-like storage nanoservice with disk backed, Fastest NoSQL Database.
-
-          - image: telegram-notifier
-            source: services/telegram-notifier
-            dockerfile: cloud/container/alwatr-services.dockerfile
-            description: Alwatr Telegram Notify Microservice, Distributed simple and fast telegram notify nanoservice.
-
-          # uniquely
-          - image: soffit-pwa
-            source: uniquely/soffit-pwa
-            dockerfile: cloud/container/alwatr-pwa.dockerfile
-            description: Soffit PWA.
-
-          - image: com-pwa
-            source: uniquely/com-pwa
-            dockerfile: cloud/container/alwatr-pwa.dockerfile
-            description: Customer Order Management PWA.
-
-          - image: keep-pwa
-            source: uniquely/keep-pwa
-            dockerfile: cloud/container/alwatr-pwa.dockerfile
-            description: Keep PWA.
-
-          - image: com-api
-            source: uniquely/com-api
-            dockerfile: cloud/container/alwatr-services.dockerfile
-            description: Customer Order Management API.
-
-          - image: flight-finder-api
-            source: uniquely/flight-finder-api
-            dockerfile: cloud/container/alwatr-services.dockerfile
-            description: Alwatr Flight Finder Application API.
-
-          # - image: flight-finder-pwa
-          #   source: uniquely/flight-finder-pwa
-          #   dockerfile: cloud/container/alwatr-pwa.dockerfile
-          #   description: Alwatr Flight Finder PWA.
-
+          - image: 12fy
+            description: Alwatr 12fy website.
+            siteUrl: https://12fy.alwatr.ir
 
     permissions:
       contents: read
@@ -144,7 +89,7 @@ jobs:
           context: .
           file: ${{ matrix.dockerfile }}
           build-args: |
-            PACKAGE_SOURCE=${{ matrix.source }}
+            SITE_URL=${{ matrix.siteUrl }}
           cache-from: type=gha
           cache-to: type=gha,mode=max
 
