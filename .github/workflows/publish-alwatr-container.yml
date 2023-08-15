@@ -5,12 +5,6 @@ name: Publish Alwatr Containers
 on:
   workflow_dispatch:
 
-  push:
-    tags:
-      - 'v*.*.*'
-    branches:
-      - main
-
   pull_request:
     paths:
       - 'cloud/Dockerfile'
@@ -30,12 +24,16 @@ jobs:
     runs-on: ubuntu-latest
 
     strategy:
-      fail-fast: false
+      fail-fast: true
       matrix:
         include:
           - image: 12fy
             description: Alwatr 12fy website.
             siteUrl: https://12fy.alwatr.ir
+
+          - image: 12fy-beta
+            description: Alwatr 12fy website.
+            siteUrl: https://beta.12fy.alwatr.ir
 
     permissions:
       contents: read

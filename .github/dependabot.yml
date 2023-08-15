@@ -6,7 +6,6 @@ updates:
     directory: /
     open-pull-requests-limit: 20
     reviewers:
-      - AliMD
       - njfamirm
     schedule:
       interval: daily
@@ -20,7 +19,6 @@ updates:
     versioning-strategy: increase
     open-pull-requests-limit: 20
     reviewers:
-      - AliMD
       - njfamirm
     schedule:
       interval: daily
