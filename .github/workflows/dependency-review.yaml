@@ -1,0 +1,31 @@
+# yaml-language-server: $schema=https://json.schemastore.org/github-workflow.json
+
+name: Dependency Review
+
+on:
+  workflow_dispatch:
+
+  schedule:
+    - cron: '5 8 * * *'
+    #        * * * * *
+    #        │ │ │ │ │
+    #        │ │ │ │ └───── day of the week (0 - 6 or SUN-SAT)
+    #        │ │ │ └─────── month (1 - 12 or JAN-DEC)
+    #        │ │ └───────── day of the month (1 - 31)
+    #        │ └─────────── hour (0 - 23)
+    #        └───────────── minute (0 - 59)
+
+jobs:
+  dependency-review:
+    name: Dependency Review
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: read
+
+    steps:
+      - name: ⤵️ Checkout repository
+        uses: actions/checkout@v3.5.3
+
+      - name: 🚀 Dependency Review
+        uses: actions/dependency-review-action@v3.0.7
