@@ -2,7 +2,12 @@
 permalink: "/robots.txt"
 eleventyExcludeFromCollections: true
 ---
+{% if env.NO_INDEX == true %}
+User-agent: *
+Disallow: /
+{% else %}
 User-agent: *
 Allow: /
 
-Sitemap: {{ env.SITE_URL }}/sitemap.xml
+Sitemap: /sitemap.xml
+{% endif %}
