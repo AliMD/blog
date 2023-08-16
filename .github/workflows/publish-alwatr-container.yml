@@ -6,7 +6,7 @@ on:
   workflow_dispatch:
 
   push:
-    branch:
+    branches:
       - main
 
   pull_request:
