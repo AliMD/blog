@@ -32,6 +32,11 @@ jobs:
           - image: 12fy
             description: Alwatr 12fy website.
             siteUrl: https://12fy.alwatr.ir
+            noIndex: 1
+
+          - image: 12fy-beta
+            description: Alwatr 12fy beta website.
+            siteUrl: https://beta.12fy.alwatr.ir
 
     permissions:
       contents: read
@@ -76,6 +81,9 @@ jobs:
       - name: 🚀 Build and push container image
         id: build-and-push
         uses: docker/build-push-action@v4.1.1
+        env:
+          noIndex: ${{ matrix.noIndex }}
+          siteUrl: ${{ matrix.siteUrl }}
         with:
           push: ${{ github.event_name != 'pull_request' }}
           github-token: ${{ secrets.GITHUB_TOKEN }}
@@ -84,7 +92,7 @@ jobs:
           context: .
           file: cloud/Dockerfile
           build-args: |
-            SITE_URL=${{ matrix.siteUrl }}
+            siteUrl=${{ matrix.siteUrl }}
           cache-from: type=gha
           cache-to: type=gha,mode=max
 
