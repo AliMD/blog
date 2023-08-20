@@ -2,11 +2,11 @@
   "main": [
     {
       "name": "Home",
-      "link": "/"
+      "link": "/en/home.html"
     },
     {
       "name": "About us",
-      "link": "/about"
+      "link": "/en/about.html"
     }
   ]
 }
