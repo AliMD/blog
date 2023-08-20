@@ -3,9 +3,10 @@
 <head>
 {% include "meta.njk" %}
 <style>
-  body {
-    padding: 0;
-  }
+  {% set css %}
+  {% include "../_css/main.css" %}
+  {% endset %}
+  {{ css | postcss | safe }}
 </style>
 </head>
 <body>
