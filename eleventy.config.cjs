@@ -12,6 +12,8 @@ module.exports = function (eleventyConfig) {
     'assets/img/meta/favicon.ico': '/favicon.ico',
   });
 
+  eleventyConfig.addWatchTarget('./site/');
+
   eleventyConfig.addAsyncFilter('postcss', postcssProcess);
   eleventyConfig.addTransform('minifyHtml', minifyHtml);
 
