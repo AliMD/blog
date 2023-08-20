@@ -32,11 +32,11 @@ jobs:
           - image: 12fy-ws
             description: Alwatr 12fy website.
             siteUrl: https://12fy.alwatr.ir
-            noIndex: 1
 
           - image: 12fy-beta-ws
             description: Alwatr 12fy beta website.
             siteUrl: https://beta.12fy.alwatr.ir
+            noIndex: 1
 
     permissions:
       contents: read
