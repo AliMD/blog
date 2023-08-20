@@ -6,13 +6,18 @@ const tailwindcss = require("tailwindcss");
 const postcssNesting = require("tailwindcss/nesting/index.js");
 
 function postcssProcess(code) {
-  return postcss([
-    postcssImport({ root: "site/_css" }),
-    postcssNesting,
-    tailwindcss,
-    postcssPresetEnv,
-    cssnano,
-  ]).process(code);
+  try {
+    return postcss([
+      postcssImport({ root: "site/_css" }),
+      postcssNesting,
+      tailwindcss,
+      postcssPresetEnv,
+      cssnano,
+    ]).process(code);
+  } catch (err) {
+    console.error('postcssProcess Error: ', err);
+    return content;
+  }
 }
 
 module.exports = { postcssProcess };
