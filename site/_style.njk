@@ -1,0 +1,8 @@
+---
+permalink: /style.css
+---
+
+{% set css %}
+  {% include "./_css/base.css" %}
+{% endset %}
+{{ css | postcss | safe }}
