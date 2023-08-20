@@ -1,5 +1,8 @@
 ---
 permalink: /script-0.js
 ---
+{% set js %}
+  {% include "./_js/banner.js" %}
+{% endset %}
 
-{% include "./_js/banner.js" %}
+{{ js | esbuild | safe }}
