@@ -1,5 +1,6 @@
 const { minifyHtml } = require('./config/minify-html');
 const { postcssProcess } = require('./config/postcss.js');
+const { esbuildTransform } = require('./config/esbuild.js');
 
 /**
  * 11ty configuration.
@@ -15,6 +16,8 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addWatchTarget('./site/');
 
   eleventyConfig.addAsyncFilter('postcss', postcssProcess);
+  eleventyConfig.addAsyncFilter('esbuild', esbuildTransform);
+
   eleventyConfig.addTransform('minifyHtml', minifyHtml);
 
   return {

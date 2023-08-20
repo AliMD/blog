@@ -16,6 +16,7 @@
   },
   "cSpell.words": [
     "cssnano",
-    "tailwindcss"
+    "tailwindcss",
+    "esbuild"
   ]
 }
