@@ -21,7 +21,7 @@ RUN yarn build
 
 # ---
 
-FROM ghcr.io/alimd/nginx:${ALWATR_NGINX_VERSION} as nginx
+FROM ghcr.io/alimd/nginx-ws:${ALWATR_NGINX_VERSION} as nginx
 # Copy builded files from last stage
 ARG PACKAGE_SOURCE
 COPY --from=builder /app/dist/ ./
