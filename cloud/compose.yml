@@ -19,7 +19,6 @@ services:
 
     environment:
       - NGINX_ACCESS_LOG=${WEBSITE_ACCESS_LOG:-off}
-      - SITE_URL=${DOMAIN}
 
     logging:
       driver: json-file
