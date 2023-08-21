@@ -1,7 +1,7 @@
 ARG NODE_VERSION=20
 ARG ALWATR_NGINX_VERSION=1
-ARG siteUrl
-ARG noIndex
+ARG siteUrl=/
+ARG noIndex=0
 
 FROM docker.io/library/node:${NODE_VERSION}-alpine as builder
 
