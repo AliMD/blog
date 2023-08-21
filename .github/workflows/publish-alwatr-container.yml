@@ -89,7 +89,7 @@ jobs:
           context: .
           file: cloud/Dockerfile
           build-args: |
-            siteUrl=${{ matrix.siteUrl }}
+            siteUrl: ${{ matrix.siteUrl }}
             noIndex: ${{ matrix.noIndex }}
           cache-from: type=gha
           cache-to: type=gha,mode=max
