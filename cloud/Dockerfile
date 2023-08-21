@@ -9,8 +9,6 @@ WORKDIR /app
 
 ENV NODE_ENV production
 ENV MY_ENVIRONMENT production
-ENV siteUrl $siteUrl
-ENV noIndex $noIndex
 
 COPY package.json *.lock ./
 RUN if [ -f *.lock ]; then \
@@ -21,7 +19,7 @@ RUN if [ -f *.lock ]; then \
 
 COPY . .
 
-RUN yarn build
+RUN siteUrl=$siteUrl noIndex=$noIndex yarn build
 
 # ---
 
