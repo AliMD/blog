@@ -5,7 +5,7 @@ networks:
     external: true
 
 services:
-  cdn:
+  website:
     image: $WEBSITE_IMAGE
 
     cpu_count: 1
