@@ -7,7 +7,7 @@
       padding: 0;
     }
   </style>
-  <link rel="stylesheet" href="/style-0.css">
+  <link rel="stylesheet" href="/style.css?v={{ git.shortSha }}">
 </head>
 <body>
   {% include "header.njk" %}
@@ -17,6 +17,6 @@
 
   {% include "footer.njk" %}
 </body>
-<script src="/script-0.js"></script>
+<script src="/script.js?v={{ git.shortSha }}"></script>
 <script src="/service-worker.js"></script>
 </html>
