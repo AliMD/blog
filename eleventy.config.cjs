@@ -19,6 +19,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addAsyncFilter('esbuild', esbuildTransform);
 
   eleventyConfig.addTransform('minifyHtml', minifyHtml);
+  eleventyConfig.addTransform('trimer', (content) => content.trim());
 
   return {
     markdownTemplateEngine: 'njk',
