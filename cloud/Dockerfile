@@ -1,5 +1,5 @@
 ARG NODE_VERSION=20
-ARG ALWATR_NGINX_VERSION=1
+ARG ALWATR_NGINX_VERSION=1.9.1-1.25-alpine
 
 FROM docker.io/library/node:${NODE_VERSION}-alpine as builder
 
@@ -29,7 +29,7 @@ RUN yarn build
 # ---
 
 FROM ghcr.io/alimd/nginx-ws:${ALWATR_NGINX_VERSION} as nginx
+
 # Copy builded files from last stage
-ARG PACKAGE_SOURCE
 COPY --from=builder /app/dist/ ./
 RUN pwd; ls -lAhF;
