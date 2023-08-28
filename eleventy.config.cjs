@@ -1,6 +1,6 @@
-const { minifyHtml } = require('./config/minify-html');
-const { postcssProcess } = require('./config/postcss.js');
-const { esbuildTransform } = require('./config/esbuild.js');
+const {minifyHtml} = require('./config/minify-html');
+const {postcssProcess} = require('./config/postcss.js');
+const {esbuildTransform} = require('./config/esbuild.js');
 
 /**
  * 11ty configuration.

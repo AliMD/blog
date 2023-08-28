@@ -1,4 +1,4 @@
-const swcHtml = require("@swc/html");
+const swcHtml = require('@swc/html');
 
 /**
  * @type {import("@swc/html").Options}
@@ -6,7 +6,7 @@ const swcHtml = require("@swc/html");
 const swcHtmlOptions = {
   forceSetHtml5Doctype: true,
   quotes: true,
-  collapseWhitespaces: "smart",
+  collapseWhitespaces: 'smart',
   removeEmptyMetadataElements: true,
   removeComments: true,
   preserveComments: [],
@@ -22,15 +22,14 @@ const swcHtmlOptions = {
 };
 
 async function minifyHtml(content) {
-  if (!this.page.outputPath || !this.page.outputPath.endsWith(".html")) return content;
+  if (!this.page.outputPath || !this.page.outputPath.endsWith('.html')) return content;
   try {
     const result = await swcHtml.minify(Buffer.from(content), swcHtmlOptions);
     return result.code;
-  }
-  catch (err) {
+  } catch (err) {
     console.error('minifyHtml Error: ', err);
     return content;
   }
 }
 
-module.exports = { minifyHtml };
+module.exports = {minifyHtml};
