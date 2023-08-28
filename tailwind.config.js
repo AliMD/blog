@@ -2,7 +2,5 @@
 
 export default {
   // ...tailwindConfig,
-  content: [
-    '**/*.njk',
-  ],
+  content: ['**/*.njk'],
 };
