@@ -3,7 +3,7 @@ permalink: /service-worker.js
 eleventyExcludeFromCollections: true
 ---
 {% set js %}
-  {% include "./_js/service-worker.js" %}
+  {% include "./_js/service-worker.ts" %}
 {% endset %}
 
 {{ js | esbuild | safe }}

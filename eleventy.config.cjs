@@ -1,7 +1,7 @@
 const {minifyHtml} = require('./config/minify-html');
 const {postcssProcess} = require('./config/postcss.js');
-const {esbuildTransform} = require('./config/esbuild.js');
 const pluginRss = require('@11ty/eleventy-plugin-rss');
+const {esbuildTransform, esbuildBuild} = require('./config/esbuild.js');
 
 /**
  * 11ty configuration.
@@ -15,6 +15,8 @@ module.exports = function (eleventyConfig) {
   });
 
   eleventyConfig.addWatchTarget('./site/');
+
+  eleventyConfig.on("eleventy.before", esbuildBuild);
 
   eleventyConfig.addPlugin(pluginRss);
 
