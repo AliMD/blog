@@ -9,5 +9,6 @@
     "dark": "#673ab7",
     "light": "#673ab7",
     "splashBackground": "#ffff"
-  }
+  },
+  "googleAnalyticsKey": ""
 }
