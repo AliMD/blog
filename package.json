@@ -22,6 +22,7 @@
   },
   "devDependencies": {
     "@11ty/eleventy": "^2.0.1",
+    "@11ty/eleventy-plugin-rss": "^1.2.0",
     "@swc/html": "^0.0.28",
     "cssnano": "^6.0.1",
     "esbuild": "^0.19.2",
