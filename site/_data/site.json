@@ -1,7 +1,7 @@
 {
   "title": "12fy",
   "description": "Khafangzj website.",
-  "author": "Alwatr",
+  "author": {"name": "Alwatr", "email": "info@alwatr.ir", "url": "https://github.com/AliMd/alwatr"},
   "defaultSocialImage": "/img/meta/social.jpg",
   "locale": "en",
   "dir": "ltr",
@@ -9,5 +9,6 @@
     "dark": "#673ab7",
     "light": "#673ab7",
     "splashBackground": "#ffff"
-  }
+  },
+  "googleAnalyticsKey": ""
 }
