@@ -5,7 +5,7 @@ const debugMode = env.NODE_ENV !== 'production';
 async function esbuildBuild() {
   try {
     await build({
-      entryPoints: ['site/_js/script.ts'],
+      entryPoints: ['site/_js/script.ts', 'site/_js/service-worker.ts'],
       outdir: 'dist/',
       logLevel: 'info',
       platform: 'browser',
