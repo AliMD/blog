@@ -11,8 +11,8 @@
 
     <nav class="text-sm md:text-base space-x-4 md:space-x-6 hidden md:block">
       {% for menu in nav.main %}
-        <a href="{{ menu.link }}" class="font-semibold text-gray-900 hover:text-gray-500">
-          <span>{{ menu.name }}</span>
+        <a href="{{ menu.label }}" class="font-semibold text-gray-900 hover:text-gray-500">
+          <span>{{ menu.header }}</span>
         </a>
       {% endfor %}
     </nav>
