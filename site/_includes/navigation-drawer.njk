@@ -4,7 +4,7 @@
   </a>
   <div class="flex flex-col justify-end gap-4 items-center text-md font-bold">
     {% for menu in nav.main %}
-      <a class="text-neutral-700 hover:text-neutral-800 hover:no-underline {% if page.url==menu.url %} text-neutral-950 {% endif %}" href="{{ menu.url }}">
+      <a class="text-neutral-600 hover:text-neutral-800 {% if page.url==menu.url %} text-neutral-950 {% endif %}" href="{{ menu.url }}">
         {{ menu.label }}
       </a>
     {% endfor %}
