@@ -20,11 +20,15 @@ const navigationDrawer = document.querySelector('.navigation-drawer') as HTMLEle
 
 if (menuButton != null && bodyOverlay != null && navigationDrawer != null) {
   menuButton.addEventListener('click', function () {
-    navigationDrawer.style.transform = 'translateX(0)';
+    if (document.documentElement.dir === 'ltr') navigationDrawer.style.transform = 'translateX(0)';
+    else navigationDrawer.style.transform = 'translateX(0)';
+
     bodyOverlay.style.display = 'block';
     bodyOverlay.style.backgroundColor = 'rgba(0, 0, 0, 0.4)';
     bodyOverlay.addEventListener('click', () => {
-        navigationDrawer.style.transform = 'translateX(-100%)';
+        if (document.documentElement.dir === 'ltr') navigationDrawer.style.transform = 'translateX(-100%)';
+        else navigationDrawer.style.transform = 'translateX(100%)';
+
         bodyOverlay.style.display = 'none';
         bodyOverlay.style.backgroundColor = 'transparent';
       }, {once: true}
