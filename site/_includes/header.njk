@@ -1,23 +1,16 @@
-<header id="page-header" class="flex flex-none items-center bg-white py-10">
-  <div class="flex text-center flex-row items-center justify-between container xl:max-w-7xl mx-auto px-4 lg:px-10">
-    <div>
-      <a href="/" class="inline-flex items-center space-x-2 font-bold text-lg tracking-wide text-yellow-500 hover:text-yellow-600">
-        <svg stroke="currentColor" fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="opacity-75 hi-outline hi-cube-transparent inline-block w-6 h-6">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 10l-2 1m0 0l-2-1m2 1v2.5M20 7l-2 1m2-1l-2-1m2 1v2.5M14 4l-2-1-2 1M4 7l2-1M4 7l2 1M4 7v2.5M12 21l-2-1m2 1l2-1m-2 1v-2.5M6 18l-2-1v-2.5M18 18l2-1v-2.5"></path>
-        </svg>
-        <span>12fy</span>
+<header class="header flex flex-row justify-between items-center w-screen fixed px-4 py-4 gap-10 z-20 transition-all">
+  <img class="w-10" src="/img/logo.png" alt="logo">
+  <div class="flex flex-row justify-end grow gap-8 items-center text-md font-bold">
+    {% for menu in nav.main %}
+      <a class="text-neutral-700 hidden lg:block hover:text-neutral-800 hover:no-underline {% if page.url==menu.url %} text-neutral-950 {% endif %}" href="{{ menu.url }}">
+        {{ menu.label }}
       </a>
-    </div>
-
-    <nav class="text-sm md:text-base space-x-4 md:space-x-6 hidden md:block">
-      {% for menu in nav.main %}
-        <a href="{{ menu.label }}" class="font-semibold text-gray-900 hover:text-gray-500">
-          <span>{{ menu.header }}</span>
-        </a>
-      {% endfor %}
-    </nav>
-    <svg class=" block w-6 h-6 md:hidden" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-      <path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"/>
-    </svg>
+    {% endfor %}
+    <span class="menu-button block lg:hidden m-1 p-0 bg-transparent cursor-pointer z-30">
+      <svg xmlns="http://www.w3.org/2000/svg" height="32" viewBox="0 -960 960 960" width="32"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
+    </span>
   </div>
+  <a class="hidden md:block" href="{{ contact.phone.url }}">
+    <button class="border font-semibold focus:outline-none px-6 py-2 leading-6 rounded border-yellow-500 bg-yellow-500 text-white hover:text-white hover:bg-amber-600 hover:border-yellow-300 focus:ring focus:ring-yellow-700 focus:ring-opacity-50 active:bg-yellow-500 active:border-yellow-500">Call us</button>
+  </a>
 </header>

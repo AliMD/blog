@@ -1,10 +1,13 @@
-<nav class="space-y-1 hidden">
-  {% for menu in nav.main %}
-    <a href="{{ menu.link }}" class="flex items-center space-x-3 px-3 font-medium rounded text-gray-700 bg-gray-100">
-    <span class="flex-none flex items-center opacity-50">
-      <svg class="hi-solid hi-desktop-computer inline-block w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a2 2 0 012-2h10a2 2 0 012 2v8a2 2 0 01-2 2h-2.22l.123.489.804.804A1 1 0 0113 18H7a1 1 0 01-.707-1.707l.804-.804L7.22 15H5a2 2 0 01-2-2V5zm5.771 7H5V5h10v7H8.771z" clip-rule="evenodd"/></svg>
-    </span>
-    <span class="py-2 grow">{{ menu.name }}</span>
+<nav class="navigation-drawer flex flex-col items-center w-3/4 md:w-2/5 h-screen fixed px-4 pt-14 gap-5 z-40 bg-white ransform-gpu -translate-x-full transition-transform">
+  <a class="w-full" href="{{ contact.phone.url }}">
+    <button class="w-full border font-semibold focus:outline-none px-6 py-2 leading-6 rounded border-yellow-500 bg-yellow-500 text-white hover:text-white hover:bg-amber-600 hover:border-yellow-300 focus:ring focus:ring-yellow-700 focus:ring-opacity-50 active:bg-yellow-500 active:border-yellow-500">Call us</button>
   </a>
-  {% endfor %}
+  <div class="flex flex-col justify-end gap-4 items-center text-md font-bold">
+    {% for menu in nav.main %}
+      <a class="text-neutral-700 hover:text-neutral-800 hover:no-underline {% if page.url==menu.url %} text-neutral-950 {% endif %}" href="{{ menu.url }}">
+        {{ menu.label }}
+      </a>
+    {% endfor %}
+  </div>
 </nav>
+<div class="body-overlay hidden fixed w-screen h-screen transition-colors z-30"></div>
