@@ -1,12 +1,12 @@
 {
   "main": [
     {
-      "name": "Home",
-      "link": "/"
+      "label": "Home",
+      "url": "/"
     },
     {
-      "name": "About us",
-      "link": "/en/about.html"
+      "label": "About us",
+      "url": "/en/about.html"
     }
   ]
 }
