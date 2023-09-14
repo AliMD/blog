@@ -5,6 +5,5 @@ eleventyExcludeFromCollections: true
 
 {% set css %}
   {% include "./_css/base.css" %}
-  {% include "./_css/vazirmatn-font.css" %}
 {% endset %}
 {{ css | postcss | safe }}
