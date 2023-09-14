@@ -1,10 +1,8 @@
 ---
-title: A Step-by-Step Guide to Self-Hosting Decap CMS
-coverAlt: Decap CMS logo with text of how can self hosting them.
-description: Simple guide to host Decap CMS backend on your own server.
+title: A Step-by-Step Guide to write post
+description: Simple guide to write post.
 keywords:
-  - decap-cms
-  - self-hosting
+  - 11ty
 ---
 
 Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus possimus ipsa dolorum numquam molestias nostrum officia! Eligendi, praesentium ipsam aspernatur dolor illum doloremque fugiat minima numquam velit modi ab expedita?
