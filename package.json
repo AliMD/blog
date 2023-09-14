@@ -1,7 +1,7 @@
 {
-  "name": "12fy",
+  "name": "12fy-blog",
   "version": "0.0.0",
-  "description": "12fy MPA base structure",
+  "description": "12fy base blog MPA base structure",
   "main": "index.js",
   "repository": "git@github.com:njfamirm/12fy.git",
   "author": "S. Amir Mohammad Najafi <njfamirm@gmail.com>",
