@@ -7,11 +7,11 @@
   "author": "S. Amir Mohammad Najafi <njfamirm@gmail.com>",
   "license": "MIT",
   "scripts": {
-        "f": "yarn format",
+    "f": "yarn format",
     "s": "yarn start",
     "w": "yarn start",
     "b": "yarn build",
-        "c": "yarn clean",
+    "c": "yarn clean",
     "cb": "run-s clean build",
     "format": "run-s format:*",
     "format:prettier": "prettier . --ignore-path .gitignore --write",
@@ -22,8 +22,8 @@
   },
   "devDependencies": {
     "@11ty/eleventy": "^2.0.1",
-    "@11ty/eleventy-navigation": "^0.3.5",
     "@11ty/eleventy-img": "^3.1.0",
+    "@11ty/eleventy-navigation": "^0.3.5",
     "@11ty/eleventy-plugin-directory-output": "^1.0.1",
     "@11ty/eleventy-plugin-rss": "^1.2.0",
     "@11ty/eleventy-plugin-syntaxhighlight": "^5.0.0",
