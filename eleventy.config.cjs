@@ -42,7 +42,6 @@ module.exports = function (eleventyConfig) {
     warningFileSize: 400 * 1000,
   });
 
-  eleventyConfig.addFilter('getHostname', getHostname);
   eleventyConfig.addFilter('humanReadableDate', date);
   eleventyConfig.addAsyncFilter('postcss', postcssProcess);
   eleventyConfig.addAsyncFilter('esbuild', esbuildTransform);
@@ -53,7 +52,7 @@ module.exports = function (eleventyConfig) {
   return {
     markdownTemplateEngine: 'njk',
     htmlTemplateEngine: 'njk',
-    templateFormats: ['njk', '11ty.js'],
+    templateFormats: ['njk', '11ty.js', 'md'],
     dir: {
       input: 'site',
       output: 'dist',
