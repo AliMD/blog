@@ -33,7 +33,7 @@
 <meta property="og:type" content="website"/>
 <meta property="og:url" content="{{ currentUrl }}"/>
 
-{% set socialImage = coverImage or sharing_image or thumbnail or hero or site.defaultSocialImage %}
+{% set socialImage = socialImage or sharing_image or thumbnail or hero or site.defaultSocialImage %}
 
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="/{{ socialImage }}"/>
