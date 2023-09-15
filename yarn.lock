@@ -15,6 +15,7 @@ __metadata:
     "@11ty/eleventy-plugin-directory-output": ^1.0.1
     "@11ty/eleventy-plugin-rss": ^1.2.0
     "@11ty/eleventy-plugin-syntaxhighlight": ^5.0.0
+    "@alwatr/style": ^1.1.1
     "@swc/html": ^0.0.28
     cssnano: ^6.0.1
     eleventy-plugin-time-to-read: ^1.3.0
@@ -189,6 +190,15 @@ __metadata:
   version: 5.2.0
   resolution: "@alloc/quick-lru@npm:5.2.0"
   checksum: bdc35758b552bcf045733ac047fb7f9a07c4678b944c641adfbd41f798b4b91fffd0fdc0df2578d9b0afc7b4d636aa6e110ead5d6281a2adc1ab90efd7f057f8
+  languageName: node
+  linkType: hard
+
+"@alwatr/style@npm:^1.1.1":
+  version: 1.1.1
+  resolution: "@alwatr/style@npm:1.1.1"
+  dependencies:
+    tslib: ^2.6.2
+  checksum: 21cbda4fda3f480dfc73e51aee27aaa6f71a1458173994217c3196ec1167f26debd4f45ab76dce86ad8067cd451e2a06e263351f27f369745acb4d10dce073ab
   languageName: node
   linkType: hard
 
@@ -6024,6 +6034,13 @@ __metadata:
   version: 0.1.13
   resolution: "ts-interface-checker@npm:0.1.13"
   checksum: 20c29189c2dd6067a8775e07823ddf8d59a33e2ffc47a1bd59a5cb28bb0121a2969a816d5e77eda2ed85b18171aa5d1c4005a6b88ae8499ec7cc49f78571cb5e
+  languageName: node
+  linkType: hard
+
+"tslib@npm:^2.6.2":
+  version: 2.6.2
+  resolution: "tslib@npm:2.6.2"
+  checksum: 329ea56123005922f39642318e3d1f0f8265d1e7fcb92c633e0809521da75eeaca28d2cf96d7248229deb40e5c19adf408259f4b9640afd20d13aecc1430f3ad
   languageName: node
   linkType: hard
 
