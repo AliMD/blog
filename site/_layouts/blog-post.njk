@@ -2,18 +2,16 @@
 layout: base.njk
 ---
 
-<main class="post-container lg:px-24 m-10 mt-40">
-
-  <div class="mesh-gradient select-none flex flex-col justify-center items-center p-10 mb-10 text-center drop-shadow-2xl rounded-lg overflow-clip">
-    <h1 class="title font-extrabold mx-4 my-8 md:text-[4.5em] text-[2.5em] leading-none text-white drop-shadow-xl" style="letter-spacing: -0.03em">
-      {{ title }}
-    </h1>
-  </div>
+<main class="post-container lg:px-24 m-10 mt-32">
+  <h1 class="font-black mx-4 my-8 md:text-[4.5em] lg:text-9xl leading-none text-onBackground" style="letter-spacing: -0.03em">
+    {{ title }}
+  </h1>
+  {% image socialImage, socialImageAlt or "Cover post" %}
 
   <div class="flex flex-row justify-between items-end text-secondary">
     <div class="flex flex-col">
       <p>Author</p>
-      <p class="font-bold">{{ site.author.name }}</p>
+      <p class="font-bold">{{ author or site.author.name }}</p>
     </div>
 
     <div class="flex flex-col">
@@ -21,7 +19,7 @@ layout: base.njk
       <p>{{ content | timeToRead }} read</p>
     </div>
   </div>
-  <div class="mesh-gradient w-full h-[2px] mt-4 mb-20"></div>
+  <div class="bg-primary w-full h-[2px] mt-4 mb-20"></div>
 
   <article class="prose prose-indigo prose-lg m-4 lg:px-24">
 
