@@ -15,8 +15,8 @@ eleventyExcludeFromCollections: true
     <name>{{ site.author.name }}</name>
     <email>{{ site.author.email }}</email>
   </author>
-  {%- for post in collections.post | reverse %}
-  {%- set absolutePostUrl = post.url | absoluteUrl(env.siteUrl) %}
+  {%- for post in collections.blog | reverse %}
+    {%- set absolutePostUrl = post.url | absoluteUrl(env.siteUrl) %}
     <entry>
       <title>{{ post.data.title }}</title>
       <link href="{{ absolutePostUrl }}"/>
