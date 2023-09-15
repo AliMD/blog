@@ -1,6 +1,8 @@
 ---
 title: A Step-by-Step Guide to write post
 description: Simple guide to write post.
+author: S. Amir Mohammad Najafi
+socialImage: assets/img/blog/sample-post/cover.jpg
 keywords:
   - 11ty
 ---
