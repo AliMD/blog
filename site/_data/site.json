@@ -6,8 +6,8 @@
   "locale": "en",
   "dir": "ltr",
   "theme": {
-    "dark": "#673ab7",
-    "light": "#673ab7",
+    "light": "#215fa6",
+    "dark": "#5d92dd",
     "splashBackground": "#ffff"
   },
   "googleAnalyticsKey": ""
