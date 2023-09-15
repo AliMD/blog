@@ -1,9 +1,9 @@
 {
-  "title": "12fy",
-  "description": "Khafangzj website.",
+  "title": "12fy-blog",
+  "description": "12fy base blog.",
   "author": {"name": "Alwatr", "email": "info@alwatr.ir", "url": "https://github.com/AliMd/alwatr"},
   "defaultSocialImage": "/img/meta/social.jpg",
-  "locale": "en",
+  "locale": "en-US",
   "dir": "ltr",
   "theme": {
     "light": "#215fa6",
