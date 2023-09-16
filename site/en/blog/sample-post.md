@@ -4,8 +4,8 @@ description: Simple guide to write post and you can write spam text for better v
 author:
   name: S. Amir Mohammad Najafi
   url: https://www.njfamirm.ir
-  avatar: assets/img/authors/njfamirm.jpg
-socialImage: assets/img/blog/sample-post/cover.jpg
+  avatar: /img/authors/njfamirm.jpg
+socialImage: /img/blog/sample-post/cover.jpg
 type:
   - Training
 keywords:
@@ -24,7 +24,7 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit:
 
 Lorem ipsum dolor sit amet consectetur adipisicing elit.
 
-{% image "assets/img/hero.jpg", "Image" %}
+{% image "/img/hero.jpg", "Image" %}
 
 Then when the application is created, save the `Client ID` and create new `Client secrets` for use in the last step.
 
