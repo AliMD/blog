@@ -36,7 +36,9 @@ eleventyNavigation:
       <div class="absolute pattern-dots-xl text-amber-100 bottom-0 right-0 w-32 h-48 md:h-96 transform translate-y-12 translate-x-16 rotate-3"></div>
       <div class="absolute inset-0 rounded-xl bg-amber-100 bg-opacity-50 -m-4 transform rotate-2"></div>
       <div class="absolute inset-0 rounded-xl bg-amber-200 bg-opacity-50 -m-4 transform -rotate-2"></div>
-      <img src="/img/hero.jpg" alt="Hero Image" class="relative rounded-lg mx-auto shadow-lg"/>
+      <div class="relative rounded-lg mx-auto shadow-lg">
+        {% image "/img/hero.jpg", "Hero Image" %}
+      </div>
     </div>
   </div>
 </main>
