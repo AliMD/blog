@@ -53,7 +53,7 @@
   <meta name="twitter:creator" content="@{{ contact.twitter }}"/>
 {% endif %}
 
-<meta name="authors" content="{{ author or site.author.name }}"/>
+<meta name="authors" content="{{ author.name or site.author.name }}"/>
 
 {% if keywords %}
   <meta name="tags" content="{{ keywords | sort }}"/>
