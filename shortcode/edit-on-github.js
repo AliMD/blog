@@ -1,5 +1,5 @@
 function editOnGitHub(page) {
-  const githubRepo = 'https://github.com/njfamirm/njfamirm.ir';
+  const githubRepo = 'https://github.com/alimd/blog';
   const githubEditBranch = 'main';
   const inputPath = page.inputPath.replace(/^\.\//, '');
 
