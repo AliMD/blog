@@ -1,10 +1,6 @@
 ---
 title: A Step-by-Step Guide to write post
 description: Simple guide to write post and you can write spam text for better view.
-author:
-  name: S. Amir Mohammad Najafi
-  url: https://www.njfamirm.ir
-  avatar: /img/authors/njfamirm.jpg
 socialImage: /img/blog/sample-post/cover.jpg
 type:
   - Training
