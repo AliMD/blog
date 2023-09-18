@@ -15,8 +15,10 @@
     "editor.defaultFormatter": "okitavera.vscode-nunjucks-formatter"
   },
   "cSpell.words": [
+    "alimd",
     "cssnano",
-    "tailwindcss",
-    "esbuild"
+    "esbuild",
+    "mihandoost",
+    "tailwindcss"
   ]
 }
