@@ -1,7 +1,7 @@
 {
   "name": "alimd-blog",
   "version": "0.0.0",
-  "description": "A blog for mihandoost",
+  "description": "S. Ali Mihandoost personal blog.",
   "main": "index.js",
   "repository": "git@github.com:AliMD/blog.git",
   "author": "S. Amir Mohammad Najafi <njfamirm@gmail.com>",
