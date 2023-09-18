@@ -1,7 +1,7 @@
 {
-  "title": "AliMD-blog",
-  "description": "AliMD blog.",
-  "author": {"name": "S. Ali Mihandoost", "email": "ali@mihandoost.com", "url": "https://github.com/AliMd/blog"},
+  "title": "AliMD",
+  "description": "S. Ali Mihandoost personal blog.",
+  "author": {"name": "S. Ali Mihandoost", "email": "ali@mihandoost.com", "url": "https://twitter.com/alidotmd"},
   "defaultSocialImage": "img/meta/social.jpg",
   "locale": "en-US",
   "dir": "ltr",
