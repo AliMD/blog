@@ -1,9 +1,9 @@
 {
-  "name": "12fy-blog",
+  "name": "alimd-blog",
   "version": "0.0.0",
-  "description": "12fy base blog MPA base structure",
+  "description": "A blog for mihandoost",
   "main": "index.js",
-  "repository": "git@github.com:njfamirm/12fy.git",
+  "repository": "git@github.com:AliMD/blog.git",
   "author": "S. Amir Mohammad Najafi <njfamirm@gmail.com>",
   "license": "MIT",
   "scripts": {
