@@ -8,7 +8,7 @@ import {typographyTheme} from '@alwatr/style/lib/typography.js';
 import {zIndexTheme} from '@alwatr/style/lib/z-index.js';
 
 const config = {
-  content: ['**/*.njk'],
+  content: ['site/**/*', 'shortcode/**/*'],
   darkMode: 'media',
   theme: {
     extend: {
