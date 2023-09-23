@@ -1,5 +1,5 @@
 ---
-permalink: null
+eleventyExcludeFromCollections: true
 title: Intro To JavaScript
 description: Talk about fundamentals of the JavaScript programming language for creating interactive and dynamic webpages.
 socialImage: /img/blog/sample-post/cover.jpg
