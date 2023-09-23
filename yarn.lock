@@ -14,7 +14,7 @@ __metadata:
     "@11ty/eleventy-plugin-directory-output": ^1.0.1
     "@11ty/eleventy-plugin-rss": ^1.2.0
     "@alwatr/icon": ^1.1.3
-    "@alwatr/style": ^1.1.2
+    "@alwatr/style": ^1.2.0
     "@swc/html": ^0.0.28
     cssnano: ^6.0.1
     esbuild: ^0.19.3
@@ -23,6 +23,7 @@ __metadata:
     postcss-import: ^15.1.0
     postcss-preset-env: ^9.1.4
     prettier: ^3.0.3
+    prettier-plugin-tailwindcss: ^0.5.4
     tailwindcss: ^3.3.3
   languageName: unknown
   linkType: soft
@@ -261,12 +262,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@alwatr/style@npm:^1.1.2":
-  version: 1.1.2
-  resolution: "@alwatr/style@npm:1.1.2"
+"@alwatr/style@npm:^1.2.0":
+  version: 1.2.0
+  resolution: "@alwatr/style@npm:1.2.0"
   dependencies:
     tslib: ^2.6.2
-  checksum: f69d2d2ba4e7599ef82d59dc7a95cc300cf6da3ce1faf9934e7c8ddd763dbddfba719507f9a981b2886cace03f1277c9eca11ad7d8681bb7c996d1ac6f04a8ca
+  checksum: 7be05b5c7fa474c52306effe5639792fa88fa1dc4528fecd5416c81f67ce30d917a8fc1a8bbba0a6adf4873eb75314724ba856ef4c9de1b44304e9ebbc00604f
   languageName: node
   linkType: hard
 
@@ -4851,6 +4852,59 @@ __metadata:
     posthtml-parser: ^0.11.0
     posthtml-render: ^3.0.0
   checksum: 8b9b9d27bd2417d6b5b7d408000b23316c3c4d2a2d0ea62080a8fbec5654cc7376ea9d6317b290c030d616142144a8ca0a96ffe1e919493e3eac17442d362596
+  languageName: node
+  linkType: hard
+
+"prettier-plugin-tailwindcss@npm:^0.5.4":
+  version: 0.5.4
+  resolution: "prettier-plugin-tailwindcss@npm:0.5.4"
+  peerDependencies:
+    "@ianvs/prettier-plugin-sort-imports": "*"
+    "@prettier/plugin-pug": "*"
+    "@shopify/prettier-plugin-liquid": "*"
+    "@shufo/prettier-plugin-blade": "*"
+    "@trivago/prettier-plugin-sort-imports": "*"
+    prettier: ^3.0
+    prettier-plugin-astro: "*"
+    prettier-plugin-css-order: "*"
+    prettier-plugin-import-sort: "*"
+    prettier-plugin-jsdoc: "*"
+    prettier-plugin-organize-attributes: "*"
+    prettier-plugin-organize-imports: "*"
+    prettier-plugin-style-order: "*"
+    prettier-plugin-svelte: "*"
+  peerDependenciesMeta:
+    "@ianvs/prettier-plugin-sort-imports":
+      optional: true
+    "@prettier/plugin-pug":
+      optional: true
+    "@shopify/prettier-plugin-liquid":
+      optional: true
+    "@shufo/prettier-plugin-blade":
+      optional: true
+    "@trivago/prettier-plugin-sort-imports":
+      optional: true
+    prettier-plugin-astro:
+      optional: true
+    prettier-plugin-css-order:
+      optional: true
+    prettier-plugin-import-sort:
+      optional: true
+    prettier-plugin-jsdoc:
+      optional: true
+    prettier-plugin-marko:
+      optional: true
+    prettier-plugin-organize-attributes:
+      optional: true
+    prettier-plugin-organize-imports:
+      optional: true
+    prettier-plugin-style-order:
+      optional: true
+    prettier-plugin-svelte:
+      optional: true
+    prettier-plugin-twig-melody:
+      optional: true
+  checksum: b4380e03a9f7aaf25f5d352fd145618497b5e9281bbd8c1a43e90a9a72daaf0585f8ac8bf5608e41481441caa4eb568c74556164a384de6a5533a196edab52b0
   languageName: node
   linkType: hard
 
