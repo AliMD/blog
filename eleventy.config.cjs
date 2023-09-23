@@ -1,4 +1,5 @@
 const {minifyHtml} = require('./config/minify-html');
+const {loadIcon} = require('./shortcode/alwatr-icon.js');
 const {postcssProcess} = require('./config/postcss.js');
 const pluginRss = require('@11ty/eleventy-plugin-rss');
 const {esbuildTransform, esbuildBuild} = require('./config/esbuild.js');
@@ -34,6 +35,8 @@ module.exports = function (eleventyConfig) {
 
   eleventyConfig.addAsyncFilter('postcss', postcssProcess);
   eleventyConfig.addAsyncFilter('esbuild', esbuildTransform);
+
+  eleventyConfig.addShortcode('alwatrIcon', loadIcon);
 
   eleventyConfig.addTransform('minifyHtml', minifyHtml);
   eleventyConfig.addTransform('trimer', (content) => content.trim());
