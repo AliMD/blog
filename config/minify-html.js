@@ -19,6 +19,8 @@ const swcHtmlOptions = {
   sortAttributes: true,
   tagOmission: false,
   selfClosingVoidElements: true,
+  sortSpaceSeparatedAttributeValues: false,
+
 };
 
 async function minifyHtml(content) {
