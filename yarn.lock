@@ -13,7 +13,7 @@ __metadata:
     "@11ty/eleventy-navigation": ^0.3.5
     "@11ty/eleventy-plugin-directory-output": ^1.0.1
     "@11ty/eleventy-plugin-rss": ^1.2.0
-    "@alwatr/icon": ^1.1.3
+    "@alwatr/icon-set-ionic": ^0.1.0
     "@alwatr/style": ^1.2.0
     "@swc/html": ^0.0.28
     cssnano: ^6.0.1
@@ -157,108 +157,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@alwatr/element@npm:^1.1.2":
-  version: 1.1.2
-  resolution: "@alwatr/element@npm:1.1.2"
-  dependencies:
-    "@alwatr/fsm": ^1.1.2
-    "@alwatr/i18n": ^1.1.2
-    "@alwatr/logger": ^1.1.2
-    "@alwatr/router": ^1.1.2
-    lit: ^2.8.0
-    tslib: ^2.6.2
-  checksum: 1e19f931b977a8064f08064e4acd821e9025e23b8b8eb4c0a392e10608f3ec58ea9f08e5377cbe2f31352e03b9bf3e69a3cb07ec481a638af38647ee0c429160
-  languageName: node
-  linkType: hard
-
-"@alwatr/fetch@npm:^2.0.1":
-  version: 2.0.1
-  resolution: "@alwatr/fetch@npm:2.0.1"
-  dependencies:
-    "@alwatr/logger": ^1.1.5
-    "@alwatr/util": ^1.2.3
-    tslib: ^2.6.2
-  checksum: 32ca4d1198e36e8670089ee970071dc8e4e00c1ce8d37bc508a256665bb083923f5ca3bfdc2f16f7df41fa8c869717f6fdc468c68623d6af9f1f325348577dd9
-  languageName: node
-  linkType: hard
-
-"@alwatr/fsm@npm:^1.1.2":
-  version: 1.1.2
-  resolution: "@alwatr/fsm@npm:1.1.2"
-  dependencies:
-    "@alwatr/logger": ^1.1.2
-    "@alwatr/signal": ^1.1.2
-    "@alwatr/type": ^1.1.1
-    tslib: ^2.6.2
-  checksum: 930799deb4df39042de384207ba2963d88692a3e8bcf650bfaf3b8ddc0841ccecb64b4e860f84fc5581307a17978764e5ba89d91f7ee9723059689e0d6fc3c80
-  languageName: node
-  linkType: hard
-
-"@alwatr/i18n@npm:^1.1.2":
-  version: 1.1.2
-  resolution: "@alwatr/i18n@npm:1.1.2"
-  dependencies:
-    "@alwatr/logger": ^1.1.2
-    "@alwatr/math": ^1.1.2
-    "@alwatr/signal": ^1.1.2
-    tslib: ^2.6.2
-  checksum: 445024a7512470c6c1ce4bd6da370c614b087e8d0d280ea8ec5d2333c914b6e495cec11ad78e0d0cea67cf017ab8702dd380048ac787239d6ede21f70559423c
-  languageName: node
-  linkType: hard
-
-"@alwatr/icon@npm:^1.1.3":
-  version: 1.1.3
-  resolution: "@alwatr/icon@npm:1.1.3"
-  dependencies:
-    "@alwatr/element": ^1.1.2
-    "@alwatr/fetch": ^2.0.1
-    "@alwatr/logger": ^1.1.2
-    tslib: ^2.6.2
-  checksum: c021f79622c4e115a650f2211463121dfb735f91a25fa72b8440a6a6cf0b6980b1e7ab11f9dcee2403170ecc0f9f5b7dfd466362df54aa34f240ee8dfcd69dad
-  languageName: node
-  linkType: hard
-
-"@alwatr/logger@npm:^1.1.2, @alwatr/logger@npm:^1.1.5":
-  version: 1.1.5
-  resolution: "@alwatr/logger@npm:1.1.5"
-  dependencies:
-    "@alwatr/type": ^1.1.4
-    tslib: ^2.6.2
-  checksum: 0879cbe316dda91ff724fd94515941d715ee7c8df762436c8ade525408c1d1eeebae6643c2a6cf535f25215a0b4134aae7dd322a030ea30f110ad6c257505b3a
-  languageName: node
-  linkType: hard
-
-"@alwatr/math@npm:^1.1.2, @alwatr/math@npm:^1.1.5":
-  version: 1.1.5
-  resolution: "@alwatr/math@npm:1.1.5"
-  dependencies:
-    "@alwatr/logger": ^1.1.5
-    tslib: ^2.6.2
-  checksum: b234501e7bf73a75b52c838cd2993bdce418ba2e84c95667e881a8d6431752d4585ef78260f7febb3e8322e4702b107fd8dc59718727ee5a0617bab3880b97ae
-  languageName: node
-  linkType: hard
-
-"@alwatr/router@npm:^1.1.2":
-  version: 1.1.2
-  resolution: "@alwatr/router@npm:1.1.2"
-  dependencies:
-    "@alwatr/logger": ^1.1.2
-    "@alwatr/math": ^1.1.2
-    "@alwatr/signal": ^1.1.2
-    tslib: ^2.6.2
-  checksum: 2efc375144f4be8433f9a634de74312aa410d709a9a8ca0ff4e9c38ab39d34a8d3df8eee15876d5e6b757944f3dd05356e5849b56f794f3546b823dbf006d9c2
-  languageName: node
-  linkType: hard
-
-"@alwatr/signal@npm:^1.1.2":
-  version: 1.1.2
-  resolution: "@alwatr/signal@npm:1.1.2"
-  dependencies:
-    "@alwatr/logger": ^1.1.2
-    "@alwatr/type": ^1.1.1
-    "@alwatr/util": ^1.2.0
-    tslib: ^2.6.2
-  checksum: 265f524a69759fda52844e936a9e7b72c87df38f51e8acc5b10f35c3d94f0dd0ef1fa89804ed5117583ca681df601567a2a7fae8778ff439fe15f8df4fcf9a95
+"@alwatr/icon-set-ionic@npm:^0.1.0":
+  version: 0.1.0
+  resolution: "@alwatr/icon-set-ionic@npm:0.1.0"
+  checksum: cf81746f057adceb4d2e20686f92786e236f080e093c278fa9092128596d6f30208cb2673f9bb20f08c5a435cdd9be40c9200b43d053e448ee8d1ef20c1b436e
   languageName: node
   linkType: hard
 
@@ -268,24 +170,6 @@ __metadata:
   dependencies:
     tslib: ^2.6.2
   checksum: 7be05b5c7fa474c52306effe5639792fa88fa1dc4528fecd5416c81f67ce30d917a8fc1a8bbba0a6adf4873eb75314724ba856ef4c9de1b44304e9ebbc00604f
-  languageName: node
-  linkType: hard
-
-"@alwatr/type@npm:^1.1.1, @alwatr/type@npm:^1.1.4":
-  version: 1.1.4
-  resolution: "@alwatr/type@npm:1.1.4"
-  checksum: 28b418e3d509d581d4e850e65c256f8818e9b38335e2a1e3da11f7d04776465884e84bd7d2dd943f58694d2d188550012387bef748d13c04a14cb52a023a8dad
-  languageName: node
-  linkType: hard
-
-"@alwatr/util@npm:^1.2.0, @alwatr/util@npm:^1.2.3":
-  version: 1.2.3
-  resolution: "@alwatr/util@npm:1.2.3"
-  dependencies:
-    "@alwatr/math": ^1.1.5
-    "@alwatr/type": ^1.1.4
-    tslib: ^2.6.2
-  checksum: a6691c5e7500826326e8b0efa3e452decb664b065c494b3558e1c4eedf7c651ab0ed6fae4c5a82a7e9453dbdca7c76198e4cf31eeb4fe1c20ed56a4b20d726b1
   languageName: node
   linkType: hard
 
@@ -934,22 +818,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@lit-labs/ssr-dom-shim@npm:^1.0.0, @lit-labs/ssr-dom-shim@npm:^1.1.0":
-  version: 1.1.1
-  resolution: "@lit-labs/ssr-dom-shim@npm:1.1.1"
-  checksum: 7a7add78e3ee570a7b987b9bf85e700b20d35d31c8b54cf4c8b2e3c8458ed4e2b0ff328706e5be7887f0ca8a02878c186e76609defb78f0d1b3c0e6b47c9f6ef
-  languageName: node
-  linkType: hard
-
-"@lit/reactive-element@npm:^1.3.0, @lit/reactive-element@npm:^1.6.0":
-  version: 1.6.3
-  resolution: "@lit/reactive-element@npm:1.6.3"
-  dependencies:
-    "@lit-labs/ssr-dom-shim": ^1.0.0
-  checksum: 79b58631c38effeabad090070324431da8a22cf0ff665f5e4de35e4d791f984742b3d340c9c7fce996d1124a8da95febc582471b4c237236c770b1300b56ef6e
-  languageName: node
-  linkType: hard
-
 "@nodelib/fs.scandir@npm:2.1.5":
   version: 2.1.5
   resolution: "@nodelib/fs.scandir@npm:2.1.5"
@@ -1160,13 +1028,6 @@ __metadata:
   version: 3.0.5
   resolution: "@types/minimatch@npm:3.0.5"
   checksum: c41d136f67231c3131cf1d4ca0b06687f4a322918a3a5adddc87ce90ed9dbd175a3610adee36b106ae68c0b92c637c35e02b58c8a56c424f71d30993ea220b92
-  languageName: node
-  linkType: hard
-
-"@types/trusted-types@npm:^2.0.2":
-  version: 2.0.4
-  resolution: "@types/trusted-types@npm:2.0.4"
-  checksum: 5256c4576cd1c90d33ddd9cc9cbd4f202b39c98cbe8b7f74963298f9eb2159c285ea5c25a6181b4c594d8d75641765bff85d72c2d251ad076e6529ce0eeedd1c
   languageName: node
   linkType: hard
 
@@ -3312,37 +3173,6 @@ __metadata:
   version: 1.1.0
   resolution: "list-to-array@npm:1.1.0"
   checksum: dabf025e809c3400e2c4607e47c40060f2b50bd75dd3fa1de5d8c3cccdb2eb68e67f9ae63354b998fc2f81c240be8f928f5ae8820fac45b7f07119765e58a997
-  languageName: node
-  linkType: hard
-
-"lit-element@npm:^3.3.0":
-  version: 3.3.3
-  resolution: "lit-element@npm:3.3.3"
-  dependencies:
-    "@lit-labs/ssr-dom-shim": ^1.1.0
-    "@lit/reactive-element": ^1.3.0
-    lit-html: ^2.8.0
-  checksum: 29a596fa556e231cce7246ca3e5687ad238f299b0cb374a0934d5e6fe9adf1436e031d4fbd21b280aabfc0e21a66e6c4b52da558a908df2566d09d960f3ca93d
-  languageName: node
-  linkType: hard
-
-"lit-html@npm:^2.8.0":
-  version: 2.8.0
-  resolution: "lit-html@npm:2.8.0"
-  dependencies:
-    "@types/trusted-types": ^2.0.2
-  checksum: 2d70df07248bcb2f502a3afb1e91d260735024fa669669ffb1417575aa39c3092779725ac1b90f5f39e4ce78c63f431f51176bc67f532389f0285a6991573255
-  languageName: node
-  linkType: hard
-
-"lit@npm:^2.8.0":
-  version: 2.8.0
-  resolution: "lit@npm:2.8.0"
-  dependencies:
-    "@lit/reactive-element": ^1.6.0
-    lit-element: ^3.3.0
-    lit-html: ^2.8.0
-  checksum: 2480e733f7d022d3ecba91abc58a20968f0ca8f5fa30b3341ecf4bcf4845e674ad27b721a5ae53529cafc6ca603c015b80d0979ceb7a711e268ef20bb6bc7527
   languageName: node
   linkType: hard
 
