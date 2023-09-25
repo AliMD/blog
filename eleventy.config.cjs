@@ -41,6 +41,7 @@ module.exports = function (eleventyConfig) {
   });
 
   eleventyConfig.addFilter('humanReadableDate', date);
+  eleventyConfig.addFilter('trimer', (content) => content.trim());
   eleventyConfig.addAsyncFilter('postcss', postcssProcess);
   eleventyConfig.addAsyncFilter('esbuild', esbuildTransform);
 
