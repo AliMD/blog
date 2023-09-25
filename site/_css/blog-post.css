@@ -4,7 +4,11 @@
   }
 
   h2 {
-    @apply text-2xl sm:text-4xl font-bold text-primary mt-10 mb-5 md:text-4xl;
+    @apply text-2xl font-bold text-primary mt-10 mb-5 md:text-4xl;
+  }
+
+  h3 {
+    @apply text-xl font-bold text-primary mt-10 mb-5 md:text-2xl;
   }
 
   code:not(pre code) {
@@ -17,6 +21,27 @@
 
   p {
     @apply leading-7 text-xl my-5;
+  }
+
+  blockquote {
+    @apply border-l-4 border-primary bg-tertiary bg-opacity-10 p-5 my-5;
+  }
+
+  blockquote::before {
+    @apply text-2xl;
+    content: "💡";
+  }
+
+  table {
+    @apply w-full border-collapse border border-secondary bg-opacity-10 my-10 text-center;
+  }
+
+  th, td {
+    @apply border border-secondary p-2;
+  }
+
+  th {
+    @apply bg-secondary bg-opacity-10;
   }
 
   details {
