@@ -37,10 +37,8 @@ layout: base.njk
     </div>
 
     {% if content | toc %}
-    <aside class="table-of-content hidden xl:sticky xl:top-[4.5rem] xl:-mr-6 xl:block xl:h-[calc(100vh-4.5rem)] xl:flex-none xl:overflow-y-auto xl:py-16 xl:pr-6">
-      <h2 id="on-this-page-title" class="font-display text-md font-bold text-secondary">
-        On this page
-      </h2>
+    <aside id="table-of-content" class="table-of-content hidden xl:sticky xl:top-[4.5rem] xl:-mr-6 xl:block xl:h-[calc(100vh-4.5rem)] xl:flex-none xl:overflow-y-auto xl:py-16 xl:pr-6">
+      <a href="#table-of-content"><h2 class="font-display text-md font-bold text-secondary">On this page</h2></a>
       {{ content | toc | safe }}
     </aside>
   {% endif %}

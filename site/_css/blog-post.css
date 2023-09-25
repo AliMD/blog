@@ -18,16 +18,21 @@
   .content {
     @apply min-w-0 max-w-2xl flex-auto px-4 py-16 lg:max-w-none lg:pr-0 lg:pl-8 xl:px-16;
 
+    hr {
+      @apply my-10 border-gray-300 dark:border-gray-700;
+    }
+
     img {
       @apply dark:brightness-90 rounded-lg select-none my-10 text-center drop-shadow-lg mx-auto;
     }
 
-    h2 {
-      @apply text-2xl font-bold text-primary mt-10 mb-5 md:text-4xl;
+    h2,
+    h3 {
+      @apply text-headlineMedium font-mono font-semibold text-onBackground mt-10 mb-5;
     }
 
     h3 {
-      @apply text-xl font-bold text-primary mt-10 mb-5 md:text-2xl;
+      @apply text-headlineSmall;
     }
 
     code:not(pre code) {
@@ -39,29 +44,39 @@
     }
 
     p {
-      @apply leading-7 text-xl mb-5;
+      @apply leading-7 text-xl mb-5 text-bodyLarge;
     }
 
     blockquote {
-      @apply border-l-4 border-primary bg-tertiary bg-opacity-10 p-5 my-5;
-    }
+      @apply border-l-2 border-primary bg-opacity-10 p-5 my-5;
 
-    blockquote::before {
-      @apply text-2xl;
-      content: '💡';
+      p {
+        @apply mb-0 brightness-200 font-bold italic;
+      }
     }
 
     table {
-      @apply w-full border-collapse border border-secondary bg-opacity-10 my-10 text-center;
-    }
+      @apply -mx-4 mt-10 ring-1 ring-gray-300 sm:-mx-6 md:mx-0 md:rounded-lg min-w-full text-onBackground;
 
-    th,
-    td {
-      @apply border border-secondary p-2;
-    }
+      th {
+        @apply py-3.5 pl-4 pr-3 text-left text-sm font-semibold sm:pl-6;
+      }
 
-    th {
-      @apply bg-secondary bg-opacity-10;
+      thead {
+        @apply border-b border-gray-400;
+      }
+
+      tbody {
+        @apply divide-y divide-gray-300 p-5;
+
+        td {
+          @apply relative py-4 pl-4 sm:pl-6 pr-3 text-sm font-medium text-onBackground brightness-90;
+        }
+
+        td:nth-child(1) {
+          @apply brightness-200;
+        }
+      }
     }
 
     details {

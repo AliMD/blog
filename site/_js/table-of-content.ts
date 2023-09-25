@@ -1,17 +1,21 @@
+const headers = document.querySelectorAll('h2, h3');
+const tocLinks = document.querySelectorAll('.toc a');
+
 window.addEventListener('scroll', function () {
-  let headers = document.querySelectorAll('h2, h3');
-  let tocLinks = document.querySelectorAll('.toc a');
-  for (let i = 0; i < headers.length; i++) {
-    if (isElementInViewport(headers[i])) {
-      tocLinks[i]?.classList.add('active');
+  headers.forEach((header, index) => {
+    if (isElementInViewport(header)) {
+      if (index !== headers.length - 1) {
+        tocLinks[index - 1]?.classList.toggle('active', false);
+      }
+      tocLinks[index]?.classList.toggle('active', true);
     } else {
-      tocLinks[i]?.classList.remove('active');
+      tocLinks[index]?.classList.toggle('active', false);
     }
-  }
+  });
 });
 
 function isElementInViewport(element) {
-  let rect = element.getBoundingClientRect();
+  const rect = element.getBoundingClientRect();
   return (
     rect.top >= 0 &&
     rect.left >= 0 &&
