@@ -1,61 +1,82 @@
 .blog-post-container {
-  img {
-    @apply dark:brightness-90 rounded-lg select-none my-10 text-center drop-shadow-lg mx-auto;
+  .table-of-content {
+    .toc {
+      a {
+        @apply hover:text-slate-600 dark:hover:text-slate-300 transition-colors;
+      }
+
+      a.active {
+        @apply text-sky-500;
+      }
+
+      ol {
+        @apply mt-2 space-y-3 pl-5 text-slate-500 dark:text-slate-400;
+      }
+    }
   }
 
-  h2 {
-    @apply text-2xl font-bold text-primary mt-10 mb-5 md:text-4xl;
-  }
+  .content {
+    @apply min-w-0 max-w-2xl flex-auto px-4 py-16 lg:max-w-none lg:pr-0 lg:pl-8 xl:px-16;
 
-  h3 {
-    @apply text-xl font-bold text-primary mt-10 mb-5 md:text-2xl;
-  }
+    img {
+      @apply dark:brightness-90 rounded-lg select-none my-10 text-center drop-shadow-lg mx-auto;
+    }
 
-  code:not(pre code) {
-    @apply text-lg rounded-sm font-mono selection:p-0 bg-tertiary text-tertiary bg-opacity-10;
-  }
+    h2 {
+      @apply text-2xl font-bold text-primary mt-10 mb-5 md:text-4xl;
+    }
 
-  a {
-    @apply text-tertiary hover:brightness-50 font-bold;
-  }
+    h3 {
+      @apply text-xl font-bold text-primary mt-10 mb-5 md:text-2xl;
+    }
 
-  p {
-    @apply leading-7 text-xl my-5;
-  }
+    code:not(pre code) {
+      @apply text-lg rounded-sm font-mono selection:p-0 bg-tertiary text-tertiary bg-opacity-10;
+    }
 
-  blockquote {
-    @apply border-l-4 border-primary bg-tertiary bg-opacity-10 p-5 my-5;
-  }
+    a {
+      @apply text-tertiary hover:brightness-50 font-bold;
+    }
 
-  blockquote::before {
-    @apply text-2xl;
-    content: "💡";
-  }
+    p {
+      @apply leading-7 text-xl mb-5;
+    }
 
-  table {
-    @apply w-full border-collapse border border-secondary bg-opacity-10 my-10 text-center;
-  }
+    blockquote {
+      @apply border-l-4 border-primary bg-tertiary bg-opacity-10 p-5 my-5;
+    }
 
-  th, td {
-    @apply border border-secondary p-2;
-  }
+    blockquote::before {
+      @apply text-2xl;
+      content: '💡';
+    }
 
-  th {
-    @apply bg-secondary bg-opacity-10;
-  }
+    table {
+      @apply w-full border-collapse border border-secondary bg-opacity-10 my-10 text-center;
+    }
 
-  details {
-    @apply bg-secondary text-onSecondary p-5 mt-5 rounded-lg hover:brightness-105;
-  }
+    th,
+    td {
+      @apply border border-secondary p-2;
+    }
 
-  details[open] {
-    @apply hover:brightness-100;
-  }
+    th {
+      @apply bg-secondary bg-opacity-10;
+    }
 
-  details summary {
-    @apply font-bold cursor-pointer;
-  }
-  details summary::marker {
-    @apply pe-4;
+    details {
+      @apply bg-secondary text-onSecondary p-5 mt-5 rounded-lg hover:brightness-105;
+    }
+
+    details[open] {
+      @apply hover:brightness-100;
+    }
+
+    details summary {
+      @apply font-bold cursor-pointer;
+    }
+    details summary::marker {
+      @apply pe-4;
+    }
   }
 }
