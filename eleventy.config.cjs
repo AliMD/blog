@@ -10,8 +10,8 @@ const eleventyNavigationPlugin = require('@11ty/eleventy-navigation');
 const syntaxHighlight = require('@11ty/eleventy-plugin-syntaxhighlight');
 const {link} = require('./shortcode/link.js');
 const pluginTOC = require('eleventy-plugin-toc');
-const markdownIt = require('markdown-it')
-const markdownItAnchor = require('markdown-it-anchor')
+const markdownIt = require('markdown-it');
+const markdownItAnchor = require('markdown-it-anchor');
 
 /**
  * 11ty configuration.
@@ -30,8 +30,8 @@ module.exports = function (eleventyConfig) {
 
   eleventyConfig.setLibrary(
     'md',
-    markdownIt().use(markdownItAnchor)
-  )
+    markdownIt().use(markdownItAnchor),
+  );
 
   eleventyConfig.on('eleventy.before', esbuildBuild);
 

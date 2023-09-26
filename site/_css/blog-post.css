@@ -1,3 +1,7 @@
+hr {
+  @apply h-px my-8 bg-gray-200 border-0 dark:bg-gray-700;
+}
+
 .blog-post-container {
   .table-of-content {
     .toc {
@@ -18,17 +22,13 @@
   .content {
     @apply min-w-0 max-w-2xl flex-auto px-4 py-16 lg:max-w-none lg:pr-0 lg:pl-8 xl:px-16;
 
-    hr {
-      @apply my-10 border-gray-300 dark:border-gray-700;
-    }
-
     img {
       @apply dark:brightness-90 rounded-lg select-none my-10 text-center drop-shadow-lg mx-auto;
     }
 
     h2,
     h3 {
-      @apply text-headlineMedium font-mono font-semibold text-onBackground mt-10 mb-5;
+      @apply text-headlineMedium font-semibold text-onBackground mt-10 mb-5 cursor-pointer;
     }
 
     h3 {
@@ -56,7 +56,7 @@
     }
 
     table {
-      @apply -mx-4 mt-10 ring-1 ring-gray-300 sm:-mx-6 md:mx-0 md:rounded-lg min-w-full text-onBackground;
+      @apply -mx-4 mt-10 ring-1 ring-gray-300 sm:-mx-6 md:mx-0 md:rounded-lg min-w-full text-onBackground mb-10;
 
       th {
         @apply py-3.5 pl-4 pr-3 text-left text-sm font-semibold sm:pl-6;
