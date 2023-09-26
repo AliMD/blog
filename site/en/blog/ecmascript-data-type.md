@@ -24,7 +24,7 @@ Defining a number in JavaScript is pretty simple. The Number data type includes 
 // 120
 ```
 
-{% link "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number" %}Read more{% endlink %}
+[Read more](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number)
 
 ## Arithmetic Operations
 
@@ -36,7 +36,7 @@ You can also perform calculations with numbers, basically typing out an expressi
 // 5.1
 ```
 
-{% link "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators" %}Read more{% endlink %}
+[Read more](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators)
 
 ## Comparing Numbers
 
@@ -106,7 +106,7 @@ console.log(Hello World);
 
 > It is correct to either use double `"` or single `'` quotes with strings, but it is important to be consistent. If you start a string with a single quote, you must end it with a single quote, and vice versa.
 
-{% link "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String" %}Read more{% endlink %}
+[Read more](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)
 
 ## String Concatenation
 
@@ -251,7 +251,7 @@ Another way to work with strings is by comparing them. You've seen the compariso
 
 When you run this in the console, it returns false. Why is that? "Yes" and "yes" are the same string, right? Well not quite.
 
-{% link "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Regular_expressions/Character_escape" %}Read more{% endlink %}
+[Read more](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Regular_expressions/Character_escape)
 
 ### A. Case-sensitive
 
@@ -335,7 +335,7 @@ if (0) {
 }
 ```
 
-{% link "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean" %}Read more{% endlink %}
+[Read more](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean)
 
 ## Null & Undefined
 
@@ -361,8 +361,8 @@ y;
 // 'undefined'
 ```
 
-{% link "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null" %}Read more{% endlink %}
-{% link "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined" %}Read more{% endlink %}
+[Read more](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null)
+[Read more](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined)
 
 ## NaN
 
@@ -382,7 +382,7 @@ Math.sqrt(-10);
 // NaN
 ```
 
-{% link "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/NaN" %}Read more{% endlink %}
+[Read more](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/NaN)
 
 ## Equality
 
@@ -418,7 +418,7 @@ In this example, JavaScript takes the string "julia" and adds the number 1 to it
 
 It’s behavior like this that makes JavaScript unique from other programming languages, but it can lead to some quirky behavior when doing operations and comparisons on mixed data types.
 
-{% link "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Equality_comparisons_and_sameness" %}Read more{% endlink %}
+[Read more](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Equality_comparisons_and_sameness)
 
 ## Consolation
 

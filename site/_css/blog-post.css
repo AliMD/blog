@@ -48,7 +48,8 @@ hr {
     }
 
     blockquote {
-      @apply border-l-2 border-primary bg-opacity-10 p-5 my-5;
+      @apply border-l-2 border-primary p-5 my-5;
+      background-color: #182134;
 
       p {
         @apply mb-0 brightness-200 font-bold italic;
