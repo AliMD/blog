@@ -23,18 +23,11 @@
           </p>
 
           <div class="flex flex-row justify-between w-full">
-            <span class="flex flex-row gap-2 font-bold text-primary mb-2">
-              {% for type in post.data.type %}
-                <span>{{ type }}</span>
-              {% endfor %}
+            <span class="flex flex-row gap-2 font-mono mb-2">
+                <span>{{ post.data.type }}</span>
             </span>
 
-            <span>
-              {% for tag in post.data.keywords %}
-                <span class="text-tertiary">{{ tag }}</span>
-                {% if not loop.last %},{% endif %}
-              {% endfor %}
-            </span>
+            <span class="font-mono">{{ post.data.keywords }}</span>
           </div>
         </div>
       </a>
