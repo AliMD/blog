@@ -4,7 +4,6 @@ description: Talk about fundamentals of the Data-type in ECMAScript.
 socialImage: /img/blog/intro-to-ecmascript-data-type/cover.jpg
 type:
   - Intro-ES
-  - Training
 keywords:
   - ECMAScript
 ---
