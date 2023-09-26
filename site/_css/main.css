@@ -5,12 +5,12 @@
 @import './blog-post.css';
 @import './syntax-highlighter.css';
 
-body {
+body, .bg-main {
   background-color: #fff;
 }
 
 @media (prefers-color-scheme: dark) {
-  body {
+  body, .bg-main {
     background-color: #0f172a;
   }
 }
