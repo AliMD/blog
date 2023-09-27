@@ -1,9 +1,8 @@
 const markdownIt = require('markdown-it');
 const markdownItAnchor = require('markdown-it-anchor');
 const markdownItLinkTarget = require('markdown-it-link-attributes');
-const string = require('string');
 
-const slugify = (s) => string(s).slugify().toString();
+const slugify = (s) => encodeURIComponent(String(s).trim().toLowerCase().replace(/\s+/g, '-'));
 
 const markdown = markdownIt({
   html: true,
