@@ -27,7 +27,8 @@ hr {
     }
 
     h2,
-    h3, h4 {
+    h3,
+    h4 {
       @apply text-headlineMedium font-semibold text-onBackground mt-10 mb-5 cursor-pointer;
     }
 
@@ -52,7 +53,7 @@ hr {
     }
 
     blockquote {
-      @apply border-l-2 border p-5 my-5 text-white;
+      @apply border-l-2 border-primary p-5 my-5 text-white;
       background-color: #182134;
 
       p {
