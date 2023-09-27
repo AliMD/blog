@@ -20,5 +20,11 @@
     "esbuild",
     "mihandoost",
     "tailwindcss"
-  ]
+  ],
+  "cSpell.ignoreRegExpList": [
+    "{% end.*%}"
+  ],
+  "markdownlint.config": {
+    "MD034": false
+  }
 }
