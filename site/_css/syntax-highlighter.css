@@ -21,6 +21,10 @@ pre[class*='language-'] {
   overflow: auto;
 }
 
+pre[class='language-diagram'] {
+  @apply leading-3 tracking-tighter;
+}
+
 .token.tag,
 .token.class-name,
 .token.selector,
