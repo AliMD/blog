@@ -34,7 +34,11 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addShortcode('editOnGitHub', editOnGitHub);
 
   eleventyConfig.addPlugin(eleventyNavigationPlugin);
-  eleventyConfig.addPlugin(pluginTOC);
+  eleventyConfig.addPlugin(pluginTOC, {
+    tags: ['h2', 'h3'],
+    wrapper: 'div',
+    wrapperClass: 'toc',
+  });
   eleventyConfig.addPlugin(syntaxHighlight);
   eleventyConfig.addPlugin(pluginRss);
   eleventyConfig.addPlugin(directoryOutputPlugin, {
