@@ -12,7 +12,7 @@ window.addEventListener('scroll', function () {
       tocLinks[index]?.classList.toggle('active', false);
     }
   });
-});
+}, {passive: true});
 
 function isElementInViewport(element) {
   const rect = element.getBoundingClientRect();

@@ -32,14 +32,10 @@ jobs:
           - image: alimd-blog
             description: S. Ali Mihandoost personal blog.
             siteUrl: https://www.mihandoost.com
-            NGINX_FORCE_DOMAIN: www.mihandoost.com
-            NGINX_FORCE_DOMAIN_STATUS: 302
 
           - image: alimd-blog-beta
             description: S. Ali Mihandoost beta personal blog.
             siteUrl: https://beta.mihandoost.com
-            # NGINX_FORCE_DOMAIN: beta.mihandoost.com
-            # NGINX_FORCE_DOMAIN_STATUS: 302
             noIndex: 1
 
     permissions:
@@ -95,8 +91,6 @@ jobs:
           build-args: |
             siteUrl=${{ matrix.siteUrl }}
             noIndex=${{ matrix.noIndex }}
-            NGINX_FORCE_DOMAIN=${{ matrix.NGINX_FORCE_DOMAIN }}
-            NGINX_FORCE_DOMAIN_STATUS=${{ matrix.NGINX_FORCE_DOMAIN_STATUS }}
           cache-from: type=gha
           cache-to: type=gha,mode=max
 

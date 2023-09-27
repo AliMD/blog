@@ -23,8 +23,5 @@
   ],
   "cSpell.ignoreRegExpList": [
     "{% end.*%}"
-  ],
-  "markdownlint.config": {
-    "MD034": false
-  }
+  ]
 }
