@@ -12,8 +12,21 @@ function postcssProcess(code) {
       postcssNesting,
       tailwindcss,
       postcssPresetEnv,
-      cssnano,
-    ]).process(code);
+      cssnano({
+        preset: [
+          'default',
+          {
+            discardComments: {
+              removeAll: true,
+            },
+          },
+        ],
+      }),
+    ])
+    .process(code)
+    .then((result) => {
+      return result.css.replaceAll('--tw-', '--alw-');
+    });
   } catch (err) {
     console.error('postcssProcess Error: ', err);
     return content;
