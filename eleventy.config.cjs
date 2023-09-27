@@ -3,12 +3,13 @@ const {postcssProcess} = require('./config/postcss.js');
 const pluginRss = require('@11ty/eleventy-plugin-rss');
 const {esbuildTransform, esbuildBuild} = require('./config/esbuild.js');
 const {date} = require('./config/date.js');
+const {markdown} = require('./config/markdown.js');
 const {imageShortcode} = require('./shortcode/image.js');
 const {editOnGitHub} = require('./shortcode/edit-on-github.js');
 const directoryOutputPlugin = require('@11ty/eleventy-plugin-directory-output');
-const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
+const eleventyNavigationPlugin = require('@11ty/eleventy-navigation');
 const syntaxHighlight = require('@11ty/eleventy-plugin-syntaxhighlight');
-const {link} = require('./shortcode/link.js');
+const pluginTOC = require('eleventy-plugin-toc');
 
 /**
  * 11ty configuration.
@@ -17,7 +18,7 @@ const {link} = require('./shortcode/link.js');
  */
 module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy({
-    'assets': '/',
+    assets: '/',
     'assets/img/meta/favicon.ico': '/favicon.ico',
   });
 
@@ -25,13 +26,19 @@ module.exports = function (eleventyConfig) {
 
   eleventyConfig.addWatchTarget('site');
 
-  eleventyConfig.on("eleventy.before", esbuildBuild);
+  eleventyConfig.setLibrary('md', markdown);
+
+  eleventyConfig.on('eleventy.before', esbuildBuild);
 
   eleventyConfig.addShortcode('image', imageShortcode);
   eleventyConfig.addShortcode('editOnGitHub', editOnGitHub);
-  eleventyConfig.addPairedShortcode('link', link);
 
   eleventyConfig.addPlugin(eleventyNavigationPlugin);
+  eleventyConfig.addPlugin(pluginTOC, {
+    tags: ['h2', 'h3'],
+    wrapper: 'div',
+    wrapperClass: 'toc',
+  });
   eleventyConfig.addPlugin(syntaxHighlight);
   eleventyConfig.addPlugin(pluginRss);
   eleventyConfig.addPlugin(directoryOutputPlugin, {

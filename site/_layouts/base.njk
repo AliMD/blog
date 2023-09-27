@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="{{ site.locale }}" dir="{{ site.dir }}">
+<html lang="{{ site.locale }}" dir="{{ site.dir }}" class="scroll-smooth">
   <head>
     {% include "meta.njk" %}
     <link rel="stylesheet" href="/style.css?v={{ git.shortSha }}">
   </head>
 
-  <body class="bg-background text-onBackground selection:bg-secondary selection:text-onSecondary">
+  <body class="text-onBackground selection:bg-secondary selection:text-onSecondary">
     {% include "header.njk" %}
     {% include "navigation-drawer.njk" %}
     {{ content | safe }}

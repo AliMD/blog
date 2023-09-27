@@ -9,32 +9,25 @@
   </div>
   <div class="flex flex-row flex-wrap justify-center items-start gap-2 md:gap-8 w-full">
     {% for post in collections.blog | reverse %}
-      <a href="{{ post.url }}" class="cursor-pointer lg:w-2/5 md:w-2/5 group rounded-md p-1 bg-surface brightness-125 shadow-md hover:shadow-lg transition-shadow">
+      <a href="{{ post.url }}" class="bg-main cursor-pointer lg:w-2/5 md:w-2/5 group rounded-md p-1 brightness-125 shadow-md hover:shadow-lg transition-shadow">
         <div class="rounded-lg overflow-clip mb-2 brightness-75">
           {% image post.data.socialImage, post.data.socialImageAlt or "Cover post" %}
         </div>
 
         <div class="mx-4">
-          <h2 style="letter-spacing: -0.03em" class="font-extrabold my-2 md:text-[2em] text-[2.5em] leading-none group-hover:text-primary transition-colors">
+          <h2 class="font-extrabold my-2 md:text-[2em] text-[2.5em] leading-none group-hover:brightness-125 text-primary transition-colors">
             {{ post.data.title }}
           </h2>
-          <p class="leading-relaxed text-secondary mb-5">
+          <p class="leading-relaxed text-secondary mb-5 font-mono">
             {{ post.data.description }}
           </p>
 
           <div class="flex flex-row justify-between w-full">
-            <span class="flex flex-row gap-2 font-bold text-primary mb-2">
-              {% for type in post.data.type %}
-                <span>{{ type }}</span>
-              {% endfor %}
+            <span class="flex flex-row gap-2 font-mono mb-2">
+                <span>{{ post.data.type }}</span>
             </span>
 
-            <span>
-              {% for tag in post.data.keywords %}
-                <span class="text-tertiary">{{ tag }}</span>
-                {% if not loop.last %},{% endif %}
-              {% endfor %}
-            </span>
+            <span class="font-mono">{{ post.data.keywords }}</span>
           </div>
         </div>
       </a>
