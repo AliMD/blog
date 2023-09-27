@@ -5,12 +5,16 @@
 @import './blog-post.css';
 @import './syntax-highlighter.css';
 
-body, .bg-main {
-  background-color: #fff;
+:root {
+  --background-color: #fff;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background-color: #0f172a;
+  }
 }
 
-@media (prefers-color-scheme: dark) {
-  body, .bg-main {
-    background-color: #0f172a;
-  }
+body,
+.bg-main {
+  background-color: var(--background-color);
 }

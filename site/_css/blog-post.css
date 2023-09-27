@@ -27,12 +27,16 @@ hr {
     }
 
     h2,
-    h3 {
+    h3, h4 {
       @apply text-headlineMedium font-semibold text-onBackground mt-10 mb-5 cursor-pointer;
     }
 
     h3 {
       @apply text-headlineSmall;
+    }
+
+    h4 {
+      @apply text-headlineSmall opacity-75;
     }
 
     code:not(pre code) {
@@ -48,11 +52,23 @@ hr {
     }
 
     blockquote {
-      @apply border-l-2 border-primary p-5 my-5;
+      @apply border-l-2 border p-5 my-5 text-white;
       background-color: #182134;
 
       p {
         @apply mb-0 brightness-200 font-bold italic;
+      }
+    }
+
+    ul {
+      @apply list-decimal list-inside mb-5;
+
+      li {
+        @apply mb-2;
+      }
+
+      li::marker {
+        @apply text-tertiary font-mono;
       }
     }
 
@@ -81,7 +97,7 @@ hr {
     }
 
     details {
-      @apply bg-secondary text-onSecondary p-5 mt-5 rounded-lg hover:brightness-105;
+      @apply p-5 mt-5 rounded-lg hover:brightness-105 ring-1 ring-gray-300;
     }
 
     details[open] {
