@@ -1092,12 +1092,16 @@ __metadata:
     "@swc/html": ^0.0.28
     cssnano: ^6.0.1
     eleventy-plugin-time-to-read: ^1.3.0
+    eleventy-plugin-toc: ^1.1.5
     esbuild: ^0.19.3
+    markdown-it-anchor: ^8.6.7
+    markdown-it-link-attributes: ^4.0.1
     npm-run-all: ^4.1.5
     postcss: ^8.4.29
     postcss-import: ^15.1.0
     postcss-preset-env: ^9.1.3
     prettier: ^3.0.3
+    string: ^3.3.3
     tailwindcss: ^3.3.3
   languageName: unknown
   linkType: soft
@@ -1544,6 +1548,35 @@ __metadata:
   dependencies:
     is-regex: ^1.0.3
   checksum: 71826fae509d4dc3ef07c2e824da9c8853f910ba0d8fe699edaab263051fd3b8db77bb96e46ed896bb36ed1d86108e6d6ceedff436bec7786ba7f0b585a0bc93
+  languageName: node
+  linkType: hard
+
+"cheerio-select@npm:^2.1.0":
+  version: 2.1.0
+  resolution: "cheerio-select@npm:2.1.0"
+  dependencies:
+    boolbase: ^1.0.0
+    css-select: ^5.1.0
+    css-what: ^6.1.0
+    domelementtype: ^2.3.0
+    domhandler: ^5.0.3
+    domutils: ^3.0.1
+  checksum: 843d6d479922f28a6c5342c935aff1347491156814de63c585a6eb73baf7bb4185c1b4383a1195dca0f12e3946d737c7763bcef0b9544c515d905c5c44c5308b
+  languageName: node
+  linkType: hard
+
+"cheerio@npm:^1.0.0-rc.10":
+  version: 1.0.0-rc.12
+  resolution: "cheerio@npm:1.0.0-rc.12"
+  dependencies:
+    cheerio-select: ^2.1.0
+    dom-serializer: ^2.0.0
+    domhandler: ^5.0.3
+    domutils: ^3.0.1
+    htmlparser2: ^8.0.1
+    parse5: ^7.0.0
+    parse5-htmlparser2-tree-adapter: ^7.0.0
+  checksum: 5d4c1b7a53cf22d3a2eddc0aff70cf23cbb30d01a4c79013e703a012475c02461aa1fcd99127e8d83a02216386ed6942b2c8103845fd0812300dd199e6e7e054
   languageName: node
   linkType: hard
 
@@ -2106,6 +2139,15 @@ __metadata:
     "@11ty/eleventy":
       optional: true
   checksum: 8d8523984b730e78ebfa30270e256fcce7e608177fa4dcc4d25e489a403856848fc60d6dfa975f153769030386214363987a48220c98478a88ad25c01bc67ed1
+  languageName: node
+  linkType: hard
+
+"eleventy-plugin-toc@npm:^1.1.5":
+  version: 1.1.5
+  resolution: "eleventy-plugin-toc@npm:1.1.5"
+  dependencies:
+    cheerio: ^1.0.0-rc.10
+  checksum: f8afbda221d3c129b8e1828b5f815ff42f1b53318c9c1d6f9b8375f72b8528303c14aa69d60abae8415fbde8ed38590e077f3b4c3698f81394193840fb088960
   languageName: node
   linkType: hard
 
@@ -2863,6 +2905,18 @@ __metadata:
   languageName: node
   linkType: hard
 
+"htmlparser2@npm:^8.0.1":
+  version: 8.0.2
+  resolution: "htmlparser2@npm:8.0.2"
+  dependencies:
+    domelementtype: ^2.3.0
+    domhandler: ^5.0.3
+    domutils: ^3.0.1
+    entities: ^4.4.0
+  checksum: 29167a0f9282f181da8a6d0311b76820c8a59bc9e3c87009e21968264c2987d2723d6fde5a964d4b7b6cba663fca96ffb373c06d8223a85f52a6089ced942700
+  languageName: node
+  linkType: hard
+
 "http-cache-semantics@npm:^4.1.1":
   version: 4.1.1
   resolution: "http-cache-semantics@npm:4.1.1"
@@ -3489,6 +3543,23 @@ __metadata:
   languageName: node
   linkType: hard
 
+"markdown-it-anchor@npm:^8.6.7":
+  version: 8.6.7
+  resolution: "markdown-it-anchor@npm:8.6.7"
+  peerDependencies:
+    "@types/markdown-it": "*"
+    markdown-it: "*"
+  checksum: 828236768ac7f61ed5591393c1b1bfc5dbf2b6d0c58a3deec606c61dddaa12658a34450cbef37ab50a04453e618ce1efd47d86e4e52595024334898fd306225b
+  languageName: node
+  linkType: hard
+
+"markdown-it-link-attributes@npm:^4.0.1":
+  version: 4.0.1
+  resolution: "markdown-it-link-attributes@npm:4.0.1"
+  checksum: e859b0a3653998b7acddaf5e37052a00e940150d76b0275322e133a14179979c3516692610df75553f3b2e5d4010e1e5138f10bc85efab4768b9293a5b39f0a6
+  languageName: node
+  linkType: hard
+
 "markdown-it@npm:^13.0.1":
   version: 13.0.1
   resolution: "markdown-it@npm:13.0.1"
@@ -4091,6 +4162,25 @@ __metadata:
   version: 1.0.2
   resolution: "parse-srcset@npm:1.0.2"
   checksum: 3a0380380c6082021fcce982f0b89fb8a493ce9dfd7d308e5e6d855201e80db8b90438649b31fdd82a3d6089a8ca17dccddaa2b730a718389af4c037b8539ebf
+  languageName: node
+  linkType: hard
+
+"parse5-htmlparser2-tree-adapter@npm:^7.0.0":
+  version: 7.0.0
+  resolution: "parse5-htmlparser2-tree-adapter@npm:7.0.0"
+  dependencies:
+    domhandler: ^5.0.2
+    parse5: ^7.0.0
+  checksum: fc5d01e07733142a1baf81de5c2a9c41426c04b7ab29dd218acb80cd34a63177c90aff4a4aee66cf9f1d0aeecff1389adb7452ad6f8af0a5888e3e9ad6ef733d
+  languageName: node
+  linkType: hard
+
+"parse5@npm:^7.0.0":
+  version: 7.1.2
+  resolution: "parse5@npm:7.1.2"
+  dependencies:
+    entities: ^4.4.0
+  checksum: 59465dd05eb4c5ec87b76173d1c596e152a10e290b7abcda1aecf0f33be49646ea74840c69af975d7887543ea45564801736356c568d6b5e71792fd0f4055713
   languageName: node
   linkType: hard
 
@@ -5759,6 +5849,13 @@ __metadata:
     define-properties: ^1.1.4
     es-abstract: ^1.20.4
   checksum: 89080feef416621e6ef1279588994305477a7a91648d9436490d56010a1f7adc39167cddac7ce0b9884b8cdbef086987c4dcb2960209f2af8bac0d23ceff4f41
+  languageName: node
+  linkType: hard
+
+"string@npm:^3.3.3":
+  version: 3.3.3
+  resolution: "string@npm:3.3.3"
+  checksum: 54c788d89df6a9b1418fea124c3d000693ad23c841d35477263772f23ef33770e8dba44142cfc50f8c06279aa6fc1a5a3743c2d60150b3e917d9c3f144b40e9e
   languageName: node
   linkType: hard
 

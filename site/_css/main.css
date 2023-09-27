@@ -1,5 +1,20 @@
 @import '@alwatr/style/main.css';
 @import '@alwatr/style/palettes/h260.css';
-@import './vazirmatn-font.css';
+@import './inter-font.css';
+@import './lexend-font.css';
 @import './blog-post.css';
 @import './syntax-highlighter.css';
+
+:root {
+  --background-color: #fff;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background-color: #0f172a;
+  }
+}
+
+body,
+.bg-main {
+  background-color: var(--background-color);
+}

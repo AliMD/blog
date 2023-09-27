@@ -1,61 +1,114 @@
+hr {
+  @apply h-px my-8 bg-gray-200 border-0 dark:bg-gray-700;
+}
+
 .blog-post-container {
-  img {
-    @apply dark:brightness-90 rounded-lg select-none my-10 text-center drop-shadow-lg mx-auto;
+  .table-of-content {
+    .toc {
+      a {
+        @apply hover:text-slate-600 dark:hover:text-slate-300 transition-colors;
+      }
+
+      a.active {
+        @apply text-sky-500;
+      }
+
+      ol {
+        @apply mt-2 space-y-3 pl-5 text-slate-500 dark:text-slate-400;
+      }
+    }
   }
 
-  h2 {
-    @apply text-2xl font-bold text-primary mt-10 mb-5 md:text-4xl;
-  }
+  .content {
+    @apply min-w-0 max-w-2xl flex-auto px-4 py-16 lg:max-w-none lg:pr-0 lg:pl-8 xl:px-16;
 
-  h3 {
-    @apply text-xl font-bold text-primary mt-10 mb-5 md:text-2xl;
-  }
+    img {
+      @apply dark:brightness-90 rounded-lg select-none my-10 text-center drop-shadow-lg mx-auto;
+    }
 
-  code:not(pre code) {
-    @apply text-lg rounded-sm font-mono selection:p-0 bg-tertiary text-tertiary bg-opacity-10;
-  }
+    h2,
+    h3, h4 {
+      @apply text-headlineMedium font-semibold text-onBackground mt-10 mb-5 cursor-pointer;
+    }
 
-  a {
-    @apply text-tertiary hover:brightness-50 font-bold;
-  }
+    h3 {
+      @apply text-headlineSmall;
+    }
 
-  p {
-    @apply leading-7 text-xl my-5;
-  }
+    h4 {
+      @apply text-headlineSmall opacity-75;
+    }
 
-  blockquote {
-    @apply border-l-4 border-primary bg-tertiary bg-opacity-10 p-5 my-5;
-  }
+    code:not(pre code) {
+      @apply text-lg rounded-sm font-mono selection:p-0 bg-tertiary text-tertiary bg-opacity-10;
+    }
 
-  blockquote::before {
-    @apply text-2xl;
-    content: "💡";
-  }
+    a {
+      @apply text-tertiary hover:brightness-50 font-bold;
+    }
 
-  table {
-    @apply w-full border-collapse border border-secondary bg-opacity-10 my-10 text-center;
-  }
+    p {
+      @apply leading-7 text-xl mb-5 text-bodyLarge;
+    }
 
-  th, td {
-    @apply border border-secondary p-2;
-  }
+    blockquote {
+      @apply border-l-2 border p-5 my-5 text-white;
+      background-color: #182134;
 
-  th {
-    @apply bg-secondary bg-opacity-10;
-  }
+      p {
+        @apply mb-0 brightness-200 font-bold italic;
+      }
+    }
 
-  details {
-    @apply bg-secondary text-onSecondary p-5 mt-5 rounded-lg hover:brightness-105;
-  }
+    ul {
+      @apply list-decimal list-inside mb-5;
 
-  details[open] {
-    @apply hover:brightness-100;
-  }
+      li {
+        @apply mb-2;
+      }
 
-  details summary {
-    @apply font-bold cursor-pointer;
-  }
-  details summary::marker {
-    @apply pe-4;
+      li::marker {
+        @apply text-tertiary font-mono;
+      }
+    }
+
+    table {
+      @apply -mx-4 mt-10 ring-1 ring-gray-300 sm:-mx-6 md:mx-0 md:rounded-lg min-w-full text-onBackground mb-10;
+
+      th {
+        @apply py-3.5 pl-4 pr-3 text-left text-sm font-semibold sm:pl-6;
+      }
+
+      thead {
+        @apply border-b border-gray-400;
+      }
+
+      tbody {
+        @apply divide-y divide-gray-300 p-5;
+
+        td {
+          @apply relative py-4 pl-4 sm:pl-6 pr-3 text-sm font-medium text-onBackground brightness-90;
+        }
+
+        td:nth-child(1) {
+          @apply brightness-200;
+        }
+      }
+    }
+
+    details {
+      @apply p-5 mt-5 rounded-lg hover:brightness-105 ring-1 ring-gray-300;
+    }
+
+    details[open] {
+      @apply hover:brightness-100;
+    }
+
+    details summary {
+      @apply font-bold cursor-pointer;
+    }
+    details summary::marker {
+      @apply pe-4;
+    }
   }
 }
