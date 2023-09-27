@@ -6,6 +6,7 @@
   "repository": "git@github.com:AliMD/blog.git",
   "author": "S. Amir Mohammad Najafi <njfamirm@gmail.com>",
   "license": "MIT",
+  "browserslist": "> 1.5%, not dead",
   "scripts": {
     "f": "yarn format",
     "s": "yarn start",
@@ -27,6 +28,7 @@
     "@11ty/eleventy-plugin-directory-output": "^1.0.1",
     "@11ty/eleventy-plugin-rss": "^1.2.0",
     "@11ty/eleventy-plugin-syntaxhighlight": "^5.0.0",
+    "@alwatr/icon-set-ionic": "^0.1.0",
     "@alwatr/style": "^1.2.0",
     "@swc/html": "^0.0.28",
     "cssnano": "^6.0.1",
@@ -41,6 +43,7 @@
     "postcss-preset-env": "^9.1.4",
     "prettier": "^3.0.3",
     "string": "^3.3.3",
+    "prettier-plugin-tailwindcss": "^0.5.4",
     "tailwindcss": "^3.3.3"
   },
   "packageManager": "yarn@3.6.3"

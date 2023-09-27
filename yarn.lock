@@ -5,6 +5,32 @@ __metadata:
   version: 6
   cacheKey: 8
 
+<<<<<<< HEAD
+=======
+"12fy@workspace:.":
+  version: 0.0.0-use.local
+  resolution: "12fy@workspace:."
+  dependencies:
+    "@11ty/eleventy": ^2.0.1
+    "@11ty/eleventy-navigation": ^0.3.5
+    "@11ty/eleventy-plugin-directory-output": ^1.0.1
+    "@11ty/eleventy-plugin-rss": ^1.2.0
+    "@alwatr/icon-set-ionic": ^0.1.0
+    "@alwatr/style": ^1.2.0
+    "@swc/html": ^0.0.28
+    cssnano: ^6.0.1
+    esbuild: ^0.19.3
+    npm-run-all: ^4.1.5
+    postcss: ^8.4.30
+    postcss-import: ^15.1.0
+    postcss-preset-env: ^9.1.4
+    prettier: ^3.0.3
+    prettier-plugin-tailwindcss: ^0.5.4
+    tailwindcss: ^3.3.3
+  languageName: unknown
+  linkType: soft
+
+>>>>>>> 609159e813e0e0dce294ef0c67044d0e3044fbe5
 "@11ty/dependency-tree@npm:^2.0.1":
   version: 2.0.1
   resolution: "@11ty/dependency-tree@npm:2.0.1"
@@ -169,6 +195,16 @@ __metadata:
   languageName: node
   linkType: hard
 
+<<<<<<< HEAD
+=======
+"@alwatr/icon-set-ionic@npm:^0.1.0":
+  version: 0.1.0
+  resolution: "@alwatr/icon-set-ionic@npm:0.1.0"
+  checksum: cf81746f057adceb4d2e20686f92786e236f080e093c278fa9092128596d6f30208cb2673f9bb20f08c5a435cdd9be40c9200b43d053e448ee8d1ef20c1b436e
+  languageName: node
+  linkType: hard
+
+>>>>>>> 609159e813e0e0dce294ef0c67044d0e3044fbe5
 "@alwatr/style@npm:^1.2.0":
   version: 1.2.0
   resolution: "@alwatr/style@npm:1.2.0"
@@ -5090,6 +5126,7 @@ __metadata:
   languageName: node
   linkType: hard
 
+<<<<<<< HEAD
 "prebuild-install@npm:^7.1.1":
   version: 7.1.1
   resolution: "prebuild-install@npm:7.1.1"
@@ -5109,6 +5146,58 @@ __metadata:
   bin:
     prebuild-install: bin.js
   checksum: dbf96d0146b6b5827fc8f67f72074d2e19c69628b9a7a0a17d0fad1bf37e9f06922896972e074197fc00a52eae912993e6ef5a0d471652f561df5cb516f3f467
+=======
+"prettier-plugin-tailwindcss@npm:^0.5.4":
+  version: 0.5.4
+  resolution: "prettier-plugin-tailwindcss@npm:0.5.4"
+  peerDependencies:
+    "@ianvs/prettier-plugin-sort-imports": "*"
+    "@prettier/plugin-pug": "*"
+    "@shopify/prettier-plugin-liquid": "*"
+    "@shufo/prettier-plugin-blade": "*"
+    "@trivago/prettier-plugin-sort-imports": "*"
+    prettier: ^3.0
+    prettier-plugin-astro: "*"
+    prettier-plugin-css-order: "*"
+    prettier-plugin-import-sort: "*"
+    prettier-plugin-jsdoc: "*"
+    prettier-plugin-organize-attributes: "*"
+    prettier-plugin-organize-imports: "*"
+    prettier-plugin-style-order: "*"
+    prettier-plugin-svelte: "*"
+  peerDependenciesMeta:
+    "@ianvs/prettier-plugin-sort-imports":
+      optional: true
+    "@prettier/plugin-pug":
+      optional: true
+    "@shopify/prettier-plugin-liquid":
+      optional: true
+    "@shufo/prettier-plugin-blade":
+      optional: true
+    "@trivago/prettier-plugin-sort-imports":
+      optional: true
+    prettier-plugin-astro:
+      optional: true
+    prettier-plugin-css-order:
+      optional: true
+    prettier-plugin-import-sort:
+      optional: true
+    prettier-plugin-jsdoc:
+      optional: true
+    prettier-plugin-marko:
+      optional: true
+    prettier-plugin-organize-attributes:
+      optional: true
+    prettier-plugin-organize-imports:
+      optional: true
+    prettier-plugin-style-order:
+      optional: true
+    prettier-plugin-svelte:
+      optional: true
+    prettier-plugin-twig-melody:
+      optional: true
+  checksum: b4380e03a9f7aaf25f5d352fd145618497b5e9281bbd8c1a43e90a9a72daaf0585f8ac8bf5608e41481441caa4eb568c74556164a384de6a5533a196edab52b0
+>>>>>>> 609159e813e0e0dce294ef0c67044d0e3044fbe5
   languageName: node
   linkType: hard
 
@@ -6152,6 +6241,7 @@ __metadata:
   languageName: node
   linkType: hard
 
+<<<<<<< HEAD
 "tunnel-agent@npm:^0.6.0":
   version: 0.6.0
   resolution: "tunnel-agent@npm:0.6.0"
@@ -6161,6 +6251,8 @@ __metadata:
   languageName: node
   linkType: hard
 
+=======
+>>>>>>> 609159e813e0e0dce294ef0c67044d0e3044fbe5
 "typed-array-buffer@npm:^1.0.0":
   version: 1.0.0
   resolution: "typed-array-buffer@npm:1.0.0"
