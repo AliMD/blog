@@ -1101,6 +1101,7 @@ __metadata:
     postcss-import: ^15.1.0
     postcss-preset-env: ^9.1.3
     prettier: ^3.0.3
+    string: ^3.3.3
     tailwindcss: ^3.3.3
   languageName: unknown
   linkType: soft
@@ -5848,6 +5849,13 @@ __metadata:
     define-properties: ^1.1.4
     es-abstract: ^1.20.4
   checksum: 89080feef416621e6ef1279588994305477a7a91648d9436490d56010a1f7adc39167cddac7ce0b9884b8cdbef086987c4dcb2960209f2af8bac0d23ceff4f41
+  languageName: node
+  linkType: hard
+
+"string@npm:^3.3.3":
+  version: 3.3.3
+  resolution: "string@npm:3.3.3"
+  checksum: 54c788d89df6a9b1418fea124c3d000693ad23c841d35477263772f23ef33770e8dba44142cfc50f8c06279aa6fc1a5a3743c2d60150b3e917d9c3f144b40e9e
   languageName: node
   linkType: hard
 
