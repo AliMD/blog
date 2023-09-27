@@ -14,7 +14,7 @@ Welcome back.
 In the last article, you got a basic understanding for how data is represented and stored in the variables. But what good is that data if you can't put it to use?
 When you're writing code, the main goal is to solve a problem. The steps your code takes to solve a problem is known as an algorithm.
 
-Let me try explaining it, Imagine you are a computer 🤖
+Let explain it, Imagine you are a computer 🤖
 
 Do you remember the last time you had to decide to buy something? How did you solve that problem? In addition to figuring out whether you really need the item or not, your decision to buy the item ultimately depends on whether you have enough money to buy it. So you ask yourself, do I have enough money to buy this item? If you answered yes, then you buy the product. But if you answered no, then you did not buy the product. The process you went through in your mind to solve that problem, and the steps you took to do so, is really what lies at the heart of writing code.
 
