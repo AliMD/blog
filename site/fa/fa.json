@@ -1,4 +1,16 @@
 {
   "layout": "base.njk",
-  "permalink": "{{ page.filePathStem }}.html"
+  "permalink": "{{ page.filePathStem }}.html",
+  "navigation": {
+    "topAppBar": [
+      {
+        "key": "خانه",
+        "url": "/fa/"
+      },
+      {
+        "key": "درباره‌ما",
+        "url": "/fa/about.html"
+      }
+    ]
+  }
 }

@@ -10,7 +10,6 @@ __metadata:
   resolution: "12fy@workspace:."
   dependencies:
     "@11ty/eleventy": ^2.0.1
-    "@11ty/eleventy-navigation": ^0.3.5
     "@11ty/eleventy-plugin-directory-output": ^1.0.1
     "@11ty/eleventy-plugin-rss": ^1.2.0
     "@alwatr/icon-set-material": ^0.1.1
@@ -54,15 +53,6 @@ __metadata:
   bin:
     eleventy-dev-server: cmd.js
   checksum: 82c6dc42ebf78b8859af531f5f09012d7194ec6be627b185212c0f4363298e16c5d86866ac87a249ac2afb979f341e57cc85ef46778eb0bbefd8d59c86334602
-  languageName: node
-  linkType: hard
-
-"@11ty/eleventy-navigation@npm:^0.3.5":
-  version: 0.3.5
-  resolution: "@11ty/eleventy-navigation@npm:0.3.5"
-  dependencies:
-    dependency-graph: ^0.11.0
-  checksum: 32cf6f2c30f82600a6e000cad1e54dfa3578d9267932c3ec44d73b7850123863c5b6ead385f554211012a2c3571ed4d674049cea60d177b8561785c7c24a7c9b
   languageName: node
   linkType: hard
 
