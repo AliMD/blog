@@ -18,7 +18,7 @@
     "format:prettier": "prettier . --ignore-path .gitignore --write",
     "start": "eleventy --serve",
     "watch": "yarn start",
-    "clean": "git clean -d -x -f --exclude=node_modules --exclude=_data",
+    "clean": "git clean -d -x -f --exclude=node_modules --exclude=_data --exclude=.yarn",
     "build": "yarn build:eleventy",
     "build:tsc": "tsc --build --pretty",
     "build:eleventy": "eleventy"
