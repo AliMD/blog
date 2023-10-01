@@ -23,10 +23,10 @@ function postcssProcess(code) {
         ],
       }),
     ])
-    .process(code)
-    .then((result) => {
-      return result.css.replaceAll('--tw-', '--alw-');
-    });
+      .process(code)
+      .then((result) => {
+        return result.css.replaceAll('--tw-', '--alw-');
+      });
   } catch (err) {
     console.error('postcssProcess Error: ', err);
     return content;

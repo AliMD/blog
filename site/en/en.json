@@ -1,4 +1,20 @@
 {
   "layout": "base.njk",
-  "permalink": "{{ page.filePathStem }}.html"
+  "permalink": "{{ page.filePathStem }}.html",
+  "navigation": {
+    "topAppBar": [
+      {
+        "key": "Home",
+        "url": "/"
+      },
+      {
+        "key": "About",
+        "url": "/en/about.html"
+      },
+      {
+        "key": "Blog",
+        "url": "/en/blog.html"
+      }
+    ]
+  }
 }

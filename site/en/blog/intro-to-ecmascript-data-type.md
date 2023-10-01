@@ -211,7 +211,7 @@ Escaping a character tells JavaScript to ignore the character's special meaning 
 Because quotes are used to signify the beginning and end of a string, you can use the backslash character to escape the quotes in order to access the literal quote character.
 
 ```js
-"The man whispered, \"please speak to me.\""
+"The man whispered, \"please speak to me.\"";
 
 // The man whispered, "please speak to me."
 ```
