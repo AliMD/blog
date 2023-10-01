@@ -20,6 +20,8 @@
     "watch": "yarn start",
     "clean": "git clean -d -x -f --exclude=node_modules --exclude=_data",
     "build": "yarn build:eleventy",
+    "build:tsc": "tsc --build --pretty",
+    "build:eleventy": "eleventy"
   },
   "devDependencies": {
     "@11ty/eleventy": "^2.0.1",
