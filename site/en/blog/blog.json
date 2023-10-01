@@ -2,5 +2,5 @@
   "layout": "blog-post.njk",
   "tags": ["blog"],
   "date": "git Created",
-  "eleventyNavigation": {"parent": "Blog"}
+  "navigationParent": {"name": "Blog", "url": "en/blog.html"}
 }
