@@ -11,9 +11,5 @@
   "emmet.includeLanguages": {
     "nunjucks": "html"
   },
-  "cSpell.words": [
-    "cssnano",
-    "tailwindcss",
-    "esbuild"
-  ]
+  "cSpell.words": ["cssnano", "tailwindcss", "esbuild"]
 }

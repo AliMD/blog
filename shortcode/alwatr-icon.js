@@ -9,4 +9,4 @@ async function loadIcon(iconName, customClass = 'h-[1em] w-[1em]') {
   `;
 }
 
-module.exports = {loadIcon}
+module.exports = {loadIcon};

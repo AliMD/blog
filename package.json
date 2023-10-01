@@ -14,7 +14,7 @@
     "b": "yarn build",
     "c": "yarn clean",
     "cb": "run-s clean build",
-    "format": "run-s format:*",
+    "format": "run-s format:prettier",
     "format:prettier": "prettier . --ignore-path .gitignore --write",
     "start": "eleventy --serve",
     "watch": "yarn start",
@@ -37,7 +37,8 @@
     "postcss-preset-env": "^9.1.4",
     "prettier": "^3.0.3",
     "prettier-plugin-tailwindcss": "^0.5.4",
-    "tailwindcss": "^3.3.3"
+    "tailwindcss": "^3.3.3",
+    "typescript": "^5.2.2"
   },
   "packageManager": "yarn@3.6.3"
 }
