@@ -1,7 +1,7 @@
 pre[class*='language-'] {
   color: theme('colors.slate.50');
   background-color: #182134;
-  @apply p-4 rounded-lg my-5 drop-shadow-sm font-mono;
+  @apply my-5 rounded-lg p-4 font-mono drop-shadow-sm;
   font-size: 1em;
   text-align: left;
   white-space: pre;

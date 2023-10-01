@@ -2,10 +2,10 @@
   "layout": "blog-post.njk",
   "tags": ["blog"],
   "date": "git Created",
-  "eleventyNavigation": {"parent": "Blog"},
   "author": {
     "name": "S. Ali Mihandoost",
     "url": "https://mihandoost.com/",
     "avatar": "/img/authors/alimd.jpg"
-  }
+  },
+  "navigationParent": {"name": "Blog", "url": "en/blog.html"}
 }
