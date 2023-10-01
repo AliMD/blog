@@ -1,13 +1,14 @@
-const {minifyHtml} = require('./config/minify-html');
-const {postcssProcess} = require('./config/postcss.js');
-const pluginRss = require('@11ty/eleventy-plugin-rss');
-const {esbuildTransform, esbuildBuild} = require('./config/esbuild.js');
-const {date} = require('./config/date.js');
-const {imageShortcode} = require('./shortcode/image.js');
-const {editOnGitHub} = require('./shortcode/edit-on-github.js');
 const directoryOutputPlugin = require('@11ty/eleventy-plugin-directory-output');
-const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
+const pluginRss = require('@11ty/eleventy-plugin-rss');
 const syntaxHighlight = require('@11ty/eleventy-plugin-syntaxhighlight');
+const {markdown} = require('./config/markdown.js');
+const {esbuildTransform, esbuildBuild} = require('./config/esbuild.js');
+const {postcssProcess} = require('./config/postcss.js');
+const {date} = require('./config/date.js');
+const {loadIcon} = require('./shortcode/alwatr-icon.js');
+const {image} = require('./shortcode/image.js');
+const {editOnGitHub} = require('./shortcode/edit-on-github.js');
+const {minifyHtml} = require('./config/minify-html');
 
 /**
  * 11ty configuration.
@@ -16,20 +17,17 @@ const syntaxHighlight = require('@11ty/eleventy-plugin-syntaxhighlight');
  */
 module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy({
-    'assets': '/',
+    assets: '/',
     'assets/img/meta/favicon.ico': '/favicon.ico',
   });
 
   eleventyConfig.setQuietMode(true);
+  eleventyConfig.addWatchTarget('./site/');
 
-  eleventyConfig.addWatchTarget('site');
+  eleventyConfig.on('eleventy.before', esbuildBuild);
 
-  eleventyConfig.on("eleventy.before", esbuildBuild);
+  eleventyConfig.setLibrary('md', markdown);
 
-  eleventyConfig.addShortcode('image', imageShortcode);
-  eleventyConfig.addShortcode('editOnGitHub', editOnGitHub);
-
-  eleventyConfig.addPlugin(eleventyNavigationPlugin);
   eleventyConfig.addPlugin(syntaxHighlight);
   eleventyConfig.addPlugin(pluginRss);
   eleventyConfig.addPlugin(directoryOutputPlugin, {
@@ -41,8 +39,13 @@ module.exports = function (eleventyConfig) {
   });
 
   eleventyConfig.addFilter('humanReadableDate', date);
+  eleventyConfig.addFilter('trimer', (content) => content.trim());
   eleventyConfig.addAsyncFilter('postcss', postcssProcess);
   eleventyConfig.addAsyncFilter('esbuild', esbuildTransform);
+
+  eleventyConfig.addShortcode('alwatrIcon', loadIcon);
+  eleventyConfig.addShortcode('editOnGitHub', editOnGitHub);
+  eleventyConfig.addShortcode('image', image);
 
   eleventyConfig.addTransform('minifyHtml', minifyHtml);
   eleventyConfig.addTransform('trimer', (content) => content.trim());

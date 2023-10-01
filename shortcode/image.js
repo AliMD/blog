@@ -1,7 +1,7 @@
-const image = require('@11ty/eleventy-img');
+const imagePlugin = require('@11ty/eleventy-img');
 
-async function imageShortcode(src, alt) {
-  let metadata = await image('assets' + src, {
+async function image(src, alt = '') {
+  let metadata = await imagePlugin('assets' + src, {
     hashLength: 8,
     urlPath: '/img/',
     outputDir: 'dist/img',
@@ -13,7 +13,7 @@ async function imageShortcode(src, alt) {
     loading: 'lazy',
     decoding: 'async',
   };
-  return image.generateHTML(metadata, imageAttributes);
+  return imagePlugin.generateHTML(metadata, imageAttributes);
 }
 
-module.exports = {imageShortcode};
+module.exports = {image};
