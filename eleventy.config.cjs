@@ -1,14 +1,11 @@
-const {esbuildTransform, esbuildBuild} = require('./config/esbuild.js');
-const {postcssProcess} = require('./config/postcss.js');
-
-const {loadIcon} = require('./shortcode/alwatr-icon.js');
-
-const {minifyHtml} = require('./config/minify-html');
-
-const {markdown} = require('./config/markdown.js');
-
 const directoryOutputPlugin = require('@11ty/eleventy-plugin-directory-output');
 const pluginRss = require('@11ty/eleventy-plugin-rss');
+const {markdown} = require('./config/markdown.js');
+const {esbuildTransform, esbuildBuild} = require('./config/esbuild.js');
+const {postcssProcess} = require('./config/postcss.js');
+const {loadIcon} = require('./shortcode/alwatr-icon.js');
+const {image} = require('./shortcode/image.js');
+const {minifyHtml} = require('./config/minify-html');
 
 /**
  * 11ty configuration.
@@ -22,12 +19,11 @@ module.exports = function (eleventyConfig) {
   });
 
   eleventyConfig.setQuietMode(true);
-
-  eleventyConfig.setLibrary('md', markdown);
-
   eleventyConfig.addWatchTarget('./site/');
 
   eleventyConfig.on('eleventy.before', esbuildBuild);
+
+  eleventyConfig.setLibrary('md', markdown);
 
   eleventyConfig.addPlugin(pluginRss);
   eleventyConfig.addPlugin(directoryOutputPlugin, {
@@ -43,6 +39,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addAsyncFilter('esbuild', esbuildTransform);
 
   eleventyConfig.addShortcode('alwatrIcon', loadIcon);
+  eleventyConfig.addShortcode('image', image);
 
   eleventyConfig.addTransform('minifyHtml', minifyHtml);
   eleventyConfig.addTransform('trimer', (content) => content.trim());

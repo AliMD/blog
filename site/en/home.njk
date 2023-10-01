@@ -46,7 +46,9 @@ permalink: /
       </div>
       <div class="absolute inset-0 rounded-xl bg-amber-100 bg-opacity-50 -m-4 transform rotate-2"></div>
       <div class="absolute inset-0 rounded-xl bg-amber-200 bg-opacity-50 -m-4 transform -rotate-2"></div>
-      <img src="/img/hero.jpg" alt="Hero Image" class="relative rounded-lg mx-auto shadow-lg" />
+      <span class="relative rounded-lg overflow-hidden mx-auto shadow-lg">
+        {% image "/img/hero.jpg", "hero" %}
+      </span>
     </div>
   </div>
 </main>
