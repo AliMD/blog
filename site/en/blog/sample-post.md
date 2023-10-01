@@ -20,7 +20,7 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit:
 
 1. Go to the [lorem](https://lorem-ipsum.ir) from `Home`
 2. Copy text.
-3. Lorem ipsum dolor sit amet consectetur adipisicing *elit*.
+3. Lorem ipsum dolor sit amet consectetur adipisicing _elit_.
 
 Lorem ipsum dolor sit amet consectetur adipisicing elit.
 
