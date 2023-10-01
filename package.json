@@ -18,8 +18,8 @@
     "format:prettier": "prettier . --ignore-path .gitignore --write",
     "start": "eleventy --serve",
     "watch": "yarn start",
-    "clean": "rm -rf dist",
-    "build": "eleventy"
+    "clean": "git clean -d -x -f --exclude=node_modules --exclude=_data",
+    "build": "yarn build:eleventy",
   },
   "devDependencies": {
     "@11ty/eleventy": "^2.0.1",
