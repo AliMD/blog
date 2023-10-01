@@ -13,7 +13,7 @@ __metadata:
     "@11ty/eleventy-navigation": ^0.3.5
     "@11ty/eleventy-plugin-directory-output": ^1.0.1
     "@11ty/eleventy-plugin-rss": ^1.2.0
-    "@alwatr/icon-set-ionic": ^0.1.0
+    "@alwatr/icon-set-material": ^0.1.1
     "@alwatr/style": ^1.2.0
     "@swc/html": ^0.0.28
     cssnano: ^6.0.1
@@ -158,10 +158,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@alwatr/icon-set-ionic@npm:^0.1.0":
-  version: 0.1.0
-  resolution: "@alwatr/icon-set-ionic@npm:0.1.0"
-  checksum: cf81746f057adceb4d2e20686f92786e236f080e093c278fa9092128596d6f30208cb2673f9bb20f08c5a435cdd9be40c9200b43d053e448ee8d1ef20c1b436e
+"@alwatr/icon-set-material@npm:^0.1.1":
+  version: 0.1.1
+  resolution: "@alwatr/icon-set-material@npm:0.1.1"
+  checksum: d130a8c85721343f751096d19a51cd2abdfa170ca8f04b2eceb073be699a4afa6b195ddcc3973adf96c457834cd1b4d502a11c767cf182b16a0859e2eb3fe206
   languageName: node
   linkType: hard
 
