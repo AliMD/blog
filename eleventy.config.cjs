@@ -1,9 +1,14 @@
-const {minifyHtml} = require('./config/minify-html');
-const {loadIcon} = require('./shortcode/alwatr-icon.js');
-const {postcssProcess} = require('./config/postcss.js');
-const pluginRss = require('@11ty/eleventy-plugin-rss');
 const {esbuildTransform, esbuildBuild} = require('./config/esbuild.js');
+const {postcssProcess} = require('./config/postcss.js');
+
+const {loadIcon} = require('./shortcode/alwatr-icon.js');
+
+const {minifyHtml} = require('./config/minify-html');
+
+const {markdown} = require('./config/markdown.js');
+
 const directoryOutputPlugin = require('@11ty/eleventy-plugin-directory-output');
+const pluginRss = require('@11ty/eleventy-plugin-rss');
 
 /**
  * 11ty configuration.
@@ -18,6 +23,8 @@ module.exports = function (eleventyConfig) {
 
   eleventyConfig.setQuietMode(true);
 
+  eleventyConfig.setLibrary('md', markdown);
+
   eleventyConfig.addWatchTarget('./site/');
 
   eleventyConfig.on('eleventy.before', esbuildBuild);
@@ -31,6 +38,7 @@ module.exports = function (eleventyConfig) {
     warningFileSize: 400 * 1000,
   });
 
+  eleventyConfig.addFilter('trimer', (content) => content.trim());
   eleventyConfig.addAsyncFilter('postcss', postcssProcess);
   eleventyConfig.addAsyncFilter('esbuild', esbuildTransform);
 
@@ -42,7 +50,7 @@ module.exports = function (eleventyConfig) {
   return {
     markdownTemplateEngine: 'njk',
     htmlTemplateEngine: 'njk',
-    templateFormats: ['njk', '11ty.js'],
+    templateFormats: ['njk', '11ty.js', 'md'],
     dir: {
       input: 'site',
       output: 'dist',
